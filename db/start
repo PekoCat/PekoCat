@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TWSRV_PATH=$(dirname $0)
+cd $TWSRV_PATH
+./db

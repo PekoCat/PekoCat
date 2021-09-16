@@ -1,0 +1,42 @@
+#!/bin/bash
+
+
+kor_list="ぁ あ い ぇ え ぉ け げ こ さ ざ し じ す ず せ ぜ そ ぞ"
+jpn_list="00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19"
+taiwan_list="00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18"
+
+fnum_list="0 1 2 3 4 5 6 7 8 9 a b c d e f"
+snum_list="0 1 2 3 4 5 6 7 8 9 a b c d e f"
+
+
+if [ $# != 1 ] || [ $1 = "-h" ] ; then
+    echo "!"
+    echo "! invalid argument"
+    echo "!"
+    echo "! usage 	: 	make_hash_dir [nation]"
+    echo "!"
+    echo "! nation 	: 	kor, jpn, taiwan, china"
+    echo "!"
+    exit
+fi
+
+if [ $1 = "kor" ] ; then
+    dir_list=$kor_list
+elif [ $1 = "jpn" ] ; then
+    dir_list=$jpn_list
+elif [ $1 = "taiwan" ] ; then
+    dir_list=$taiwan_list
+elif [ $1 = "china" ] ; then
+    dir_list=$taiwan_list
+else
+    echo "! invalid nation. make_hash_dir -h help you to find nation's name"
+fi
+
+for first in $dir_list;  do
+    echo "making subdirectories of $first..."
+    for second in $fnum_list; do
+	for third in $snum_list; do
+	    `mkdir -p "./$first/$second$third"`
+	done
+    done
+done
