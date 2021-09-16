@@ -879,7 +879,7 @@ function	boolean	checkMinOfMax(object item, integer TEIP, integer value);
 function	boolean	checkManufactureCnt(object item);
 function	void	checkCrack(object item, integer randomValue);
 function	boolean	checkBreak(object item);
-function	boolean	checkDeCount(object item);
+function	boolean	checkDeCount(object item, integer success);
 function	boolean	NormalItemCanBeUsed();
 function	boolean	ResurrectItemCanBeUsed(object target);
 function	boolean	ItemDownHP(object target, integer value);

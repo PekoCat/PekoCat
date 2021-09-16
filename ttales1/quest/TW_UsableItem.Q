@@ -243,7 +243,7 @@ checkBreak(object item)				// ¾ÆÀÌÅÛ ÆÄ±« Ã³¸® °ü·Ã Ã¼Å©¿ë ÇÔ¼ö by stsoul
 
 
 function boolean
-checkDeCount(object item)				// ¾ÆÀÌÅÛ ÇÕ¼ºÈ¸¼ö °¨¼Ò Ã³¸® °ü·Ã Ã¼Å©¿ë ÇÔ¼ö by stsoul
+checkDeCount(object item, integer success)				// ¾ÆÀÌÅÛ ÇÕ¼ºÈ¸¼ö °¨¼Ò Ã³¸® °ü·Ã Ã¼Å©¿ë ÇÔ¼ö by stsoul
 {
 	integer randcnt = Util.random(0, 99);
 	integer mapChk = trigger.getWorld().getNumber();
@@ -252,22 +252,22 @@ checkDeCount(object item)				// ¾ÆÀÌÅÛ ÇÕ¼ºÈ¸¼ö °¨¼Ò Ã³¸® °ü·Ã Ã¼Å©¿ë ÇÔ¼ö by st
 //	if (!item.canBeUsedBy(trigger)) return false;
 
 	if (item.getManufactureCnt() > 3)
-		randcnt = randcnt + 50;
+		randcnt = randcnt;
 	else if (item.getManufactureCnt() > 2)
-		randcnt = randcnt + 40;
+		randcnt = randcnt + 10;
 	else if (item.getManufactureCnt() > 1)
-		randcnt = randcnt + 30;
+		randcnt = randcnt + 20;
 
 	if (mapChk == 7 || mapChk == 114)
-		randcnt = randcnt - 5;
+		success = success + 100;
 	else if (mapChk == 47 || mapChk == 50 || mapChk == 303 || mapChk == 317)
-		randcnt = randcnt - 4;
+		success = success + 100;
 
 	if (trigger.getCharacterType() == CHAR_TYPE0 || trigger.getCharacterType() == CHAR_TYPE8) {
-		randcnt = randcnt - 3;
+		success = success + 100;
 	}
 
-	if (randcnt > 60) {
+	if (randcnt < (100 - success)) {
 		trigger.message(TEXT_USABLEITEM_ENDURANCE_MESSAGE_ITEM , MSG_TYPE__SYSTEM);
 		item.sweep();
 //		trigger.removeItemClassNamed(item.getClassName(), 1);
@@ -3235,6 +3235,7 @@ quest
 qUseItem1001808()				// ÀÎÅ©¸³Æ® ½ºÅ©·Ñ
 {
 	object item;
+	integer prob = 10;
 
 	if (!NormalItemCanBeUsed()) return;
 
@@ -3260,7 +3261,7 @@ qUseItem1001808()				// ÀÎÅ©¸³Æ® ½ºÅ©·Ñ
 			trigger.message(TEXT_USABLEITEM_CANT_DECOUNT, MSG_TYPE__SYSTEM);
 			return;
 		}
-		if (!checkDeCount(item)) return;
+		if (!checkDeCount(item, prob)) return;
 
 		item.setManufactureCnt(item.getManufactureCnt() - 1);
 
@@ -3299,21 +3300,21 @@ qUseItem1002008()				// ½ÅºñÇÑ Á¤·É¼® : º¸»ó¿ë ¾ÆÀÌÅÛ
 
 		// 2005³â 10¿ù17ÀÏ ºÎÅÍ 10¿ù24ÀÏ µ¿¾È¿¡¸¸ Äù½ºÆ® ¼öÇà
 		if (Util.getYear(nowTime) != 2005 && Util.getMonth(nowTime) != 10) {
-			trigger.message("‡‹ ˆŸŠÇ ‰‚ˆ¡Ê ˆäˆø‹fì« ‡‹”q ô ö_ŠÍŠ×.", MSG_TYPE__SYSTEM);
+			trigger.message("‡‹ ˆŸŠ?‰‚ˆ??ˆ??f??‡‹”q ??_Š??", MSG_TYPE__SYSTEM);
 			if (controller.canBeExhausted())
 			    controller.decreaseNumber(1);
 			return;
 		}
 		else if (Util.getDay(nowTime) > 24)
 		{
-			trigger.message("‡‹ ˆŸŠÇ ‰‚ˆ¡Ê ˆäˆø‹fì« ‡‹”q ô ö_ŠÍŠ×.", MSG_TYPE__SYSTEM);
+			trigger.message("‡‹ ˆŸŠ?‰‚ˆ??ˆ??f??‡‹”q ??_Š??", MSG_TYPE__SYSTEM);
 			if (controller.canBeExhausted())
 			    controller.decreaseNumber(1);
 			return;
 		}
 */
 		if(clubObject == null) {
-			trigger.message("ƒNƒ‰ƒu‚•(‘2î€‹!’€‡!€Š!B", MSG_TYPE__SYSTEM);	// vahma - translate here
+			trigger.message("ƒNƒ‰ƒu‚•(‘2?‹!’€‡!€Š!B", MSG_TYPE__SYSTEM);	// vahma - translate here
 /*
    //vahma - disable expiration
 			// 2005³â 10¿ù17ÀÏ ºÎÅÍ 10¿ù24ÀÏ µ¿¾È¿¡¸¸ Äù½ºÆ® ¼öÇà
@@ -3333,7 +3334,7 @@ qUseItem1002008()				// ½ÅºñÇÑ Á¤·É¼® : º¸»ó¿ë ¾ÆÀÌÅÛ
 		}
 		if (clubObject.getMemberType(trigger.getName()) != GM_TYPE_MASTER &&
 			clubObject.getMemberType(trigger.getName()) != GM_TYPE_SUBMASTER) {
-			trigger.message("ƒNƒ‰ƒuƒ}ƒXƒ^[‚áTƒuƒ}ƒXƒ^[‚–€Ÿ-g‚ƒ€€Œ B", MSG_TYPE__SYSTEM);	// vahma - translate here
+			trigger.message("ƒNƒ‰ƒuƒ}ƒXƒ^[‚?Tƒuƒ}ƒXƒ^[‚–€Ÿ-g‚ƒ€€Œ B", MSG_TYPE__SYSTEM);	// vahma - translate here
 /*
    //vahma - disable expiration
 			// 2005³â 10¿ù17ÀÏ ºÎÅÍ 10¿ù24ÀÏ µ¿¾È¿¡¸¸ Äù½ºÆ® ¼öÇà
@@ -3888,19 +3889,19 @@ qUseItem1000145()				// Ã¼Çè ½ºÅ©·Ñ
 		trigger.addExp(500);
 		trigger.updateAttr();
 
-        trigger.message("ŒoŒ‰1l‚…³00â!…€ä€€‹! B", MSG_TYPE__SYSTEM);
+        trigger.message("ŒoŒ‰1l‚…?0?…€?€‹! B", MSG_TYPE__SYSTEM);
 		return;
 	} else if (Util.getMonth(tickTime) != 10) {
 		trigger.addExp(500);
 		trigger.updateAttr();
 
-        trigger.message("ŒoŒ‰1l‚…³00â!…€ä€€‹! B", MSG_TYPE__SYSTEM);
+        trigger.message("ŒoŒ‰1l‚…?0?…€?€‹! B", MSG_TYPE__SYSTEM);
 		return;
 	} else if (Util.getDay(tickTime) > 28) {
 		trigger.addExp(500);
 		trigger.updateAttr();
 
-        trigger.message("ŒoŒ‰1l‚…³00â!…€ä€€‹! B", MSG_TYPE__SYSTEM);
+        trigger.message("ŒoŒ‰1l‚…?0?…€?€‹! B", MSG_TYPE__SYSTEM);
 		return;
 	}
 
@@ -3936,15 +3937,15 @@ qUseItem1000145()				// Ã¼Çè ½ºÅ©·Ñ
 	} else if (chkLV < 210) {
 		repayEXP = 210000;
 	} else {
-        trigger.message("g—p‚Œ!å!‰!“€–€“!†!”€Œƒxƒ‹‚“!Œ B", MSG_TYPE__SYSTEM);
+        trigger.message("g—p‚Œ!?‰!“€–€“!†!”€Œƒxƒ‹‚“!Œ B", MSG_TYPE__SYSTEM);
 		return;
 	}
 
 	trigger.addExp(repayEXP);
 	trigger.updateAttr();
 
-    trigger.message("•áƒŒƒxƒ‹ [" + chkLV + "]", MSG_TYPE__SYSTEM);
-    trigger.message("Š…€†5à!‹4á‚“€‹!’ŠoŒ‰1l‚…[" + repayEXP + "] â!…€ä€€‹! B", MSG_TYPE__SYSTEM);
+    trigger.message("•?ƒŒƒxƒ‹ [" + chkLV + "]", MSG_TYPE__SYSTEM);
+    trigger.message("Š…€†5?‹4?‚“€‹!’ŠoŒ‰1l‚…[" + repayEXP + "] ?…€?€‹! B", MSG_TYPE__SYSTEM);
 
 // ************ º¸»óÀ» À§ÇØ ÀÓ½Ã·Î ±â´É Ãß°¡ Á¾·á ****************
 
@@ -8692,21 +8693,21 @@ qUseItem1002335()				// ÆÄ¶õ ¼±¹° »óÀÚ
 	else if(selection == 7 || selection == 8)
 		trigger.addItemClassNamed("1002693", 1);	//‰H–Xq
 	else if(selection == 9 || selection == 10)
-		trigger.addItemClassNamed("1002694", 1);	//‰H‚…!—€é,
+		trigger.addItemClassNamed("1002694", 1);	//‰H‚…!—€?
 	else if(selection == 11 || selection == 12)
-		trigger.addItemClassNamed("1002690", 1);	//••ˆê!–Š•
+		trigger.addItemClassNamed("1002690", 1);	//••ˆ?–Š•
 	else if(selection == 13 || selection == 14)
-		trigger.addItemClassNamed("1002212", 1);	//›!ä€–‡H
+		trigger.addItemClassNamed("1002212", 1);	//›!?–‡H
 	else if(selection == 15 || selection == 16)
-		trigger.addItemClassNamed("1002213", 1);	//›!ä€–ˆ•
+		trigger.addItemClassNamed("1002213", 1);	//›!?–ˆ•
 	else if(selection == 17 || selection == 18)
-		trigger.addItemClassNamed("1002214", 1);	//›!ä€–S[ƒOƒ‹
+		trigger.addItemClassNamed("1002214", 1);	//›!?–S[ƒOƒ‹
 	else if(selection == 19 || selection == 20)
-		trigger.addItemClassNamed("1002215", 1);	//›!ä€–Œé.î€ä‹
+		trigger.addItemClassNamed("1002215", 1);	//›!?–Œ???
 	else if(selection == 21 || selection == 22)
-		trigger.addItemClassNamed("1002216", 1);	//›!ä€–Œw—›‹
+		trigger.addItemClassNamed("1002216", 1);	//›!?–Œw—›‹
 	else if(selection == 23 || selection == 24)
-		trigger.addItemClassNamed("1002217", 1);	//›!ä€––r—›‹
+		trigger.addItemClassNamed("1002217", 1);	//›!?––r—›‹
 	else if(selection == 25 || selection == 26)
 		trigger.addItemClassNamed("1002869", 1);	//‰_
 	else if(selection == 27 || selection == 28)
@@ -8719,7 +8720,7 @@ qUseItem1002335()				// ÆÄ¶õ ¼±¹° »óÀÚ
 		trigger.addItemClassNamed("1000947", 1);	//ƒzƒƒCƒgƒEƒBƒ“ƒO(s)
 	else if(selection == 35 || selection == 36)
 		trigger.addItemClassNamed("1000948", 1);	//ƒ_[ƒNƒEƒBƒ“ƒO(s)
-	else trigger.addItemClassNamed("1000156", 1);		//ƒnƒYƒŒ‚–â!ç!ä€•(š‡—‹
+	else trigger.addItemClassNamed("1000156", 1);		//ƒnƒYƒŒ‚–???•(š‡—‹
 
 	// decrease number
 	if (controller.canBeExhausted()) {
@@ -9057,150 +9058,7 @@ qUseItem1002767()				// ±³È¯±Ç E
 	controller.effectBy(trigger);
 }
 
-quest
-qUseItem1002769()				// »óÇ°±Ç
-{
-	object rank;
-	integer selection, rType, tickTime, iBirth, rCount;
-	string time_Info, world_Info, Item_Info;
-	string itemID, userName;
 
-	// Log Info
-	userName = trigger.getName();
-
-	time_Info = "(" + Util.getYear(tickTime) + ") " + Util.getMonth(tickTime) + "/" + Util.getDay(tickTime) + " " + Util.getHour(tickTime) + ":" +  Util.getMinute(tickTime) + " User [" + userName + "] ";
-	world_Info = "[" + trigger.getWorld().getName() + ":" + trigger.getX() + "," + trigger.getY() + "]";
-
-	// Áß±¹ ´ëÀÀ Ãß°¡ ÀÛ¾÷. °ø¿ë »ç¿ëÇÒ ¼ö ÀÖ°Ô ±¸Á¶ º¯°æ
-	rType = Util.getRealNationType();
-
-	// ÀÎº¥Åä¸® ¹× ¹«°Ô°¡ ²ËÂû°æ¿ì
-	if (trigger.getCarryingItemInventory().availCount() < 1 || trigger.getCarryingItemInventory().availWeight() < 50)
-	{
-		trigger.message(TEXT_CLAD_AVAILCOUNUT, MSG_TYPE__SYSTEM);
-		return;
-	}
-
-	if (rType == KOREA)
-	{
-		selection = Util.random(1, 10000);
-
-		if (selection == 1) {
-			rank = Rank.select("NEW_YEAR_EVENT");
-			rCount = rank.getCount();
-
-			if(rCount < 1)			// Æä½ºÆ¼¹ú À®
-	 	  	{
-	 	  		iBirth = trigger.getBirthTime();
-				rank.add(userName, 0, 0, 0, iBirth, "null");
-				trigger.addItemClassNamed("1002212", 1);
-				Item_Info = "From Gift Certificate : +ITEM [ 1002212 ] ";
-			} else {			// »şÅ©¹Ù¸® ½´Áî
-				trigger.addItemClassNamed("1000969", 1);
-				ExpireItem("1000969", 60*60*24*10);
-				Item_Info = "From Gift Certificate : +ITEM [ 1000969 ] ";
-				trigger.sayTo(TEXT_USABLEITEM_BOX_IN_ITEM, trigger);
-			}
-		} else if (selection > 6666) {		// ¸®Æ² ÇÃ¶óÆ¼³ª À®
-			trigger.addItemClassNamed("1004782", 1);
-			ExpireItem("1004782", 60*60*24*10);
-			Item_Info = "From Gift Certificate : +ITEM [ 1004782 ] ";
-		} else if (selection > 3333) {		// ¸®Æ² ±×·¹½º À®
-			trigger.addItemClassNamed("1004783", 1);
-			ExpireItem("1004783", 60*60*24*10);
-			Item_Info = "From Gift Certificate : +ITEM [ 1004783 ] ";
-		} else {				// »şÅ©¹Ù¸® ½´Áî
-			trigger.addItemClassNamed("1000969", 1);
-			ExpireItem("1000969", 60*60*24*10);
-			Item_Info = "From Gift Certificate : +ITEM [ 1000969 ] ";
-		}
-
-		// decrease number
-		if (controller.canBeExhausted()) {
-			controller.decreaseNumber(1);
-		}
-
-		Util.log(time_Info + Item_Info + world_Info);
-	}
-	else if (rType == TAIWAN)
-	{
-		selection = Util.random(1, 10000);
-
-		if (selection == 1) {			// whale hat
-			itemID	= "1004624";
-			Item_Info = "From Gift Certificate : +ITEM [ 1004624 ] ";
-		} else if (selection == 10000) {	// Ã»Ç³ÀÇ ³¯°³
-			itemID = "1004386";
-			Item_Info = "From Gift Certificate : +ITEM [ 1004386 ] ";
-		} else if (selection <= 11) {		// ºñ³Ê½ºÀÇ ³¯°³
-			itemID = "1004343";
-			Item_Info = "From Gift Certificate : +ITEM [ 1004343 ] ";
-		} else if (selection <= 31) {		// Æä½ºÆ¼¹ú Åõ±¸
-			itemID = "1002213";
-			Item_Info = "From Gift Certificate : +ITEM [ 1002213 ] ";
-		} else if (selection >= 9979) {		// À® ¿Àºê ¸Ş¸ğ¸®¾ó
-			itemID = "1000797";
-			Item_Info = "From Gift Certificate : +ITEM [ 1000797 ] ";
-		} else {					// Åº¼º Æ÷¼Ç (Áß)
-			itemID = "1000096";
-			Item_Info = "From Gift Certificate : +ITEM [ 1000096 ] ";
-		}
-
-		// ¾ÆÀÌÅÛÀ» ÁØ´Ù.
-		trigger.addItemClassNamed(itemID, 1);
-
-		// decrease number
-		if (controller.canBeExhausted()) {
-			controller.decreaseNumber(1);
-		}
-
-		Util.log(time_Info + Item_Info + world_Info);
-	}
-	else if (rType == JAPAN)	// vahma - japan setting
-	{
-		selection = Util.random(1, 10000);
-
-		if (selection == 1) {
-			rank = Rank.select("NEW_YEAR_EVENT");
-			rCount = rank.getCount();
-
-			if(rCount < 1)			// “âY“ºš ¬
-	 	  	{
-	 	  		iBirth = trigger.getBirthTime();
-				rank.add(userName, 0, 0, 0, iBirth, "null");
-				trigger.addItemClassNamed("1002212", 1);
-				Item_Info = "From Gift Certificate : +ITEM [ 1002212 ] ";
-			} else {			// “HxŒ¬ S‘
-				trigger.addItemClassNamed("1000969", 1);
-				ExpireItem("1000969", 60*60*24*10);
-				Item_Info = "From Gift Certificate : +ITEM [ 1000969 ] ";
-				trigger.sayTo(TEXT_USABLEITEM_BOX_IN_ITEM, trigger);
-			}
-		} else if (selection > 6666) {		// Œ¬“° ”b‹ñ“ºŠI ¬
-			trigger.addItemClassNamed("1004782", 1);
-			ExpireItem("1004782", 60*60*24*10);
-			Item_Info = "From Gift Certificate : +ITEM [ 1004782 ] ";
-		} else if (selection > 3333) {		// Œ¬“° ‰vŒXY ¬
-			trigger.addItemClassNamed("1004783", 1);
-			ExpireItem("1004783", 60*60*24*10);
-			Item_Info = "From Gift Certificate : +ITEM [ 1004783 ] ";
-		} else {				// “HxŒ¬ S‘
-			trigger.addItemClassNamed("1000969", 1);
-			ExpireItem("1000969", 60*60*24*10);
-			Item_Info = "From Gift Certificate : +ITEM [ 1000969 ] ";
-		}
-
-		// decrease number
-		if (controller.canBeExhausted()) {
-			controller.decreaseNumber(1);
-		}
-
-		Util.log(time_Info + Item_Info + world_Info);
-	}
-
-	// send using effect
-	controller.effectBy(trigger);
-}
 
 quest
 qUseItem1002777()				// Ã¼Çè ½ºÅ©·Ñ : °æÇèÄ¡ 10000 »ó½Â
@@ -9961,7 +9819,7 @@ qUseItem1003012()   // Å¬·´ °æÇèÄ¡ ½ºÅ©·Ñ
 	trigger.addGuildExp(100);		// guild exp 100 Áõ°¡
 	trigger.updateAttr();
 
-	trigger.message("ƒNƒ‰ƒuŒoŒ‰1l‚…500 â!…€ä€€‹! B", MSG_TYPE__SYSTEM);
+	trigger.message("ƒNƒ‰ƒuŒoŒ‰1l‚…500 ?…€?€‹! B", MSG_TYPE__SYSTEM);
 
 	// send using effect
 	controller.effectBy(trigger);
@@ -9982,7 +9840,7 @@ qUseItem1003013()   // Å¬·´ °æÇèÄ¡ ½ºÅ©·Ñ2 ; xyzin 2004.10.4
 	trigger.addGuildExp(1000000);		// guild exp 1000000 Áõ°¡
 	trigger.updateAttr();
 
-	trigger.message("ƒNƒ‰ƒuŒoŒ‰1l‚…1000000 â!…€ä€€‹! B", MSG_TYPE__SYSTEM);
+	trigger.message("ƒNƒ‰ƒuŒoŒ‰1l‚…1000000 ?…€?€‹! B", MSG_TYPE__SYSTEM);
 
 	// send using effect
 	controller.effectBy(trigger);
@@ -10000,7 +9858,7 @@ qUseItem1003014()   // Å¬·´ °æÇèÄ¡ ½ºÅ©·Ñ3 ; xyzin 2004.10.4
 	trigger.addGuildExp(100000000);		// guild exp 100000000 Áõ°¡
 	trigger.updateAttr();
 
-	trigger.message("ƒNƒ‰ƒuŒoŒ‰1l‚…100000000 â!…€ä€€‹! B", MSG_TYPE__SYSTEM);
+	trigger.message("ƒNƒ‰ƒuŒoŒ‰1l‚…100000000 ?…€?€‹! B", MSG_TYPE__SYSTEM);
 
 	// send using effect
 	controller.effectBy(trigger);
@@ -10023,7 +9881,7 @@ qUseItem1003045()   // ºÎÈ­ ´ÜÃàÀÇ ½ºÅ©·Ñ
 	//petInventory.setRemainTime(petInventory.remainTime()-36000);
 	petInventory.setRemainTime(10);
 
-	//trigger.message("Ì”«‰‘– ŠQ¸ bˆ¡Ê 10bˆ¡ ŠÚ’€‹fø_ŠÍŠ×.", MSG_TYPE__SYSTEM);
+	//trigger.message("??‘– ŠQ?bˆ??10bˆ?Š?€‹f?_Š??", MSG_TYPE__SYSTEM);
 	trigger.message(TEXT_PET_INCUBATION_SHORT_EXT1, MSG_TYPE__SYSTEM);
 
 	// send using effect
@@ -13240,7 +13098,7 @@ UseBinding()				// ¹ÙÀÎµù ½ºÅæ »ç¿ë Ã³¸®
 	if (cMap == 46 || cMap == 53 || cMap == 59 || cMap == 93 || cMap == 98 || cMap == 115 ||
 		cMap == 116 || cMap == 348 || cMap == 387 || cMap == 388 || cMap == 389 ||
 		cMap == 390 || cMap == 417) {
-			trigger.message("—v”2à€•!—'‘‡€“!†!€!é BƒoƒCƒ“ƒhƒXƒg[ƒ“‚…€”€‡!”€ä€€‹! B", MSG_TYPE__SYSTEM);
+			trigger.message("—v”2?•!—'‘‡€“!†!€!?BƒoƒCƒ“ƒhƒXƒg[ƒ“‚…€”€‡!”€?€‹! B", MSG_TYPE__SYSTEM);
 		itemObj.sweep();
 		return;
 	}	//
@@ -13905,7 +13763,7 @@ qUseItem1001804()		// ¸Ş¸ğ¶óÀÌÁî ½ºÅ©·Ñ (Æ¼Ä¡¿¤ Àü¿ë, ÁÂÇ¥ ±â¾ï ¹× Ã¼Å©¿ë)
 
 /*
 	} else {
-		trigger.message("ƒŒƒxƒ‹Ÿ1ä€…ˆš†á!‘!’€€€Œ B", MSG_TYPE__SYSTEM);
+		trigger.message("ƒŒƒxƒ‹Ÿ1?…ˆš†?‘!’€€€Œ B", MSG_TYPE__SYSTEM);
 		return;
 	}
 */
@@ -15078,7 +14936,7 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 	}
 
 	//jaewooks japan version
-	iRandom = Util.random(1, 50000);
+/*	iRandom = Util.random(1, 50000);
 	
 	if	(iRandom <= 24455) trigger.addItemClassNamed("1000013", 1);
 	else if	(iRandom <= 26455) trigger.addItemClassNamed("1002755", 1);
@@ -15112,15 +14970,15 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 	else if	(iRandom <= 49997) trigger.addItemClassNamed("1000988", 1);
 	else if	(iRandom <= 49998) trigger.addItemClassNamed("1000989", 1);
 	else if	(iRandom <= 49999) trigger.addItemClassNamed("1000990", 1);
-	else if	(iRandom <= 50000) trigger.addItemClassNamed("1000991", 1);
+	else if	(iRandom <= 50000) trigger.addItemClassNamed("1000991", 1); */
 
 
-/*	iRandom = Util.random(1, 999);		jaewook korean version
+	iRandom = Util.random(1, 999);		//jaewook korean version
 
 
 	strUserName = trigger.getName();
 
-	if(iRandom <= 2) //1002008	½ÅºñÇÑ Á¤·É¼® 2/1000
+	if(iRandom <= 2) //1004388	½ÅºñÇÑ Á¤·É¼® 2/1000
 	{
 		strRankName = "XMAXS_EVENT1_ITEM";
 		rank = Rank.select(strRankName);
@@ -15129,7 +14987,7 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 
 		if(iMaxNum > iCount) //Áö±Ş °¡´É ÀÏ¶§
 		{
-			trigger.addItemClassNamed("1002008", 1);
+			trigger.addItemClassNamed("1004388", 1);
 			rank.add(strUserName,0, 0, 0, trigger.getBirthTime(), "null");
 		}
 		else //²ÎÀº Á¸ÀçÇÏÁö ¾ÊÀ¸¹Ç·Î °¡Àå ¸¹ÀÌ ³ª¿À´Â 1000022	»ı¸íÀÇ Á¶°¢ Áö±Ş
@@ -15137,7 +14995,7 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 			trigger.addItemClassNamed("1000022", 1);
 		}
 	}
-	else if(iRandom <= 4) //1002089	¿¡ÀÌ¼ÇÆ® ¾Æ¸Ó 2/1000
+	else if(iRandom <= 4) //1004390	¿¡ÀÌ¼ÇÆ® ¾Æ¸Ó 2/1000
 	{
 		strRankName = "XMAXS_EVENT2_ITEM";
 		rank = Rank.select(strRankName);
@@ -15146,7 +15004,7 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 
 		if(iMaxNum > iCount) //Áö±Ş °¡´É ÀÏ¶§
 		{
-			trigger.addItemClassNamed("1002089", 1);
+			trigger.addItemClassNamed("1004390", 1);
 			rank.add(strUserName,0, 0, 0, trigger.getBirthTime(), "null");
 		}
 		else //²ÎÀº Á¸ÀçÇÏÁö ¾ÊÀ¸¹Ç·Î °¡Àå ¸¹ÀÌ ³ª¿À´Â 1000022	»ı¸íÀÇ Á¶°¢ Áö±Ş
@@ -15154,7 +15012,7 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 			trigger.addItemClassNamed("1000022", 1);
 		}
 	}
-	else if(iRandom <= 6) //1002697	¼ø·Ï¿Ê 2/1000
+	else if(iRandom <= 6) //1004392	¼ø·Ï¿Ê 2/1000
 	{
 		strRankName = "XMAXS_EVENT3_ITEM";
 		rank = Rank.select(strRankName);
@@ -15163,7 +15021,7 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 
 		if(iMaxNum > iCount) //Áö±Ş °¡´É ÀÏ¶§
 		{
-			trigger.addItemClassNamed("1002697", 1);
+			trigger.addItemClassNamed("1004392", 1);
 			rank.add(strUserName,0, 0, 0, trigger.getBirthTime(), "null");
 		}
 		else //²ÎÀº Á¸ÀçÇÏÁö ¾ÊÀ¸¹Ç·Î °¡Àå ¸¹ÀÌ ³ª¿À´Â 1000022	»ı¸íÀÇ Á¶°¢ Áö±Ş
@@ -15171,54 +15029,54 @@ qUseItem1003859()				// Å©¸®½º¸¶½º ¼±¹°»óÀÚ
 			trigger.addItemClassNamed("1000022", 1);
 		}
 	}
-	else if(iRandom <= 14) //1003521	º¸¶ó»ö »Ç±Û¸Ó¸® 8/1000
+	else if(iRandom <= 14) //1004338	º¸¶ó»ö »Ç±Û¸Ó¸® 8/1000
 	{
-		trigger.addItemClassNamed("1003521", 1);
+		trigger.addItemClassNamed("1004338", 1);
 	}
-	else if(iRandom <= 22) //1003522	ÁÖÈ²»ö »Ç±Û¸Ó¸® 8/1000
+	else if(iRandom <= 22) //1004339	ÁÖÈ²»ö »Ç±Û¸Ó¸® 8/1000
 	{
-		trigger.addItemClassNamed("1003522", 1);
+		trigger.addItemClassNamed("1004339", 1);
 	}
-	else if(iRandom <= 30) //1003523	¿¬µÎ»ö »Ç±Û¸Ó¸® 8/1000
+	else if(iRandom <= 30) //1000968	¿¬µÎ»ö »Ç±Û¸Ó¸® 8/1000
 	{
-		trigger.addItemClassNamed("1003523", 1);
+		trigger.addItemClassNamed("1000968", 1);
 	}
-	else if(iRandom <= 38) //1003524	È²±İ»ö »Ç±Û¸Ó¸® 8/1000
+	else if(iRandom <= 38) //1005008	È²±İ»ö »Ç±Û¸Ó¸® 8/1000
 	{
-		trigger.addItemClassNamed("1003524", 1);
+		trigger.addItemClassNamed("1005008", 1);
 	}
-	else if(iRandom <= 48) //1001808	ÀÎÅ©¸³Æ® ½ºÅ©·Ñ 10/1000
+	else if(iRandom <= 48) //1002008	ÀÎÅ©¸³Æ® ½ºÅ©·Ñ 10/1000
+	{
+		trigger.addItemClassNamed("1002008", 1);
+	}
+	else if(iRandom <= 62) //1000665	¼ıµ¹ 14/1000
+	{
+		trigger.addItemClassNamed("1000665", 1);
+	}
+	else if(iRandom <= 76) //1000392	±×¶óÀÎ´õ 14/1000
+	{
+		trigger.addItemClassNamed("1000392", 1);
+	}
+	else if(iRandom <= 90) //1000350	Åº¼º ·Î¼Ç(´ë) 14/1000
+	{
+		trigger.addItemClassNamed("1000350", 1);
+	}
+	else if(iRandom <= 104) //1000329	¸¶·Â°­È­Á¦(´ë) 14/1000
+	{
+		trigger.addItemClassNamed("1000329", 1);
+	}
+	else if(iRandom <= 118) //1000686	¿©½ÅÀÇ °¡È£ 14/1000
+	{
+		trigger.addItemClassNamed("1000686", 1);
+	}
+	else if(iRandom <= 484) //1001808	¸¶³ªÀÇ °áÁ¤ 370/100
 	{
 		trigger.addItemClassNamed("1001808", 1);
-	}
-	else if(iRandom <= 62) //1000093	¼ıµ¹ 14/1000
-	{
-		trigger.addItemClassNamed("1000093", 1);
-	}
-	else if(iRandom <= 76) //1000094	±×¶óÀÎ´õ 14/1000
-	{
-		trigger.addItemClassNamed("1000094", 1);
-	}
-	else if(iRandom <= 90) //1000097	Åº¼º ·Î¼Ç(´ë) 14/1000
-	{
-		trigger.addItemClassNamed("1000097", 1);
-	}
-	else if(iRandom <= 104) //1000100	¸¶·Â°­È­Á¦(´ë) 14/1000
-	{
-		trigger.addItemClassNamed("1000100", 1);
-	}
-	else if(iRandom <= 118) //1000103	¿©½ÅÀÇ °¡È£ 14/1000
-	{
-		trigger.addItemClassNamed("1000103", 1);
-	}
-	else if(iRandom <= 484) //1000033	¸¶³ªÀÇ °áÁ¤ 370/100
-	{
-		trigger.addItemClassNamed("1000033", 1);
 	}
 	else if(iRandom <= 999) //1000022	»ı¸íÀÇ Á¶°¢ ³ª¸ÓÁö/1000
 	{
 		trigger.addItemClassNamed("1000022", 1);
-	}		*/		//jaewook korean version
+	}				//jaewook korean version
 
 	trigger.updateAttr();
 
@@ -15775,19 +15633,19 @@ qUseItem1003929()				// Ã¶Á¦ »óÀÚ
 
 	selection = Util.random(1, 50000);					//vahma
 
-	if (selection <= 1) {			// ÌùÅ ïŠÁ			//vahma
+	if (selection <= 1) {			// ?????		//vahma
 		itemID	= "1000126";						//vahma
-	} else if (selection <= 2) {		// ”­T’iÅ ×			//vahma
+	} else if (selection <= 2) {		// ”­T’i??		//vahma
 		itemID	= "1000132";						//vahma
-	} else if (selection <= 20000) {		// J“•”–”¡Å Ê@	//vahma
+	} else if (selection <= 20000) {		// J“•”–”???@	//vahma
 		itemID	= "1001890";						//vahma
-	} else if (selection <= 30000) {		// Y’øâ`Å ˆøàU	//vahma
+	} else if (selection <= 30000) {		// Y’øâ`?ˆøàU	//vahma
 		itemID	= "1001864";						//vahma
-	} else if (selection <= 40000) {		// ‘š”RÅ Ş’i		//vahma
+	} else if (selection <= 40000) {		// ‘š”R??i		//vahma
 		itemID	= "1000022";						//vahma
-	} else if (selection <= 45000) {		// ‘š”RÅ Ş’i		//vahma
+	} else if (selection <= 45000) {		// ‘š”R??i		//vahma
 		itemID	= "1003504";						//vahma
-	} else if (selection <= 50000) {		// ‘š”RÅ Ş’i		//vahma
+	} else if (selection <= 50000) {		// ‘š”R??i		//vahma
 		itemID	= "1000041";						//vahma
 	}
 
@@ -17190,109 +17048,100 @@ qUseItem1004798()		// ·¯ºê·¯ºê ¼±¹°¼¼Æ® (¹ß·»Å¸ÀÎ ÀÌº¥Æ®¿ë)
 
 	iRandom = Util.random(1, 10000);
 
-	if(iRandom <= 20)		// 1004853	·¯ºê È«¿°ÀÇ Åõ±¸ 0.2%
+	if(iRandom <= 10)		// 1004384	·¯ºê È«¿°ÀÇ Åõ±¸ 0.1%
 	{
-		trigger.addItemClassNamed("1004853", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004853 ] ";
+		trigger.addItemClassNamed("1004384", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004384 ] ";
 	}
-	else if(iRandom <= 30)		// 1004854	·¯ºê È«¿°ÀÇ ³¯°³ 0.1%
+	else if(iRandom <= 20)		// 1004385	·¯ºê È«¿°ÀÇ ³¯°³ 0.1%
 	{
-		trigger.addItemClassNamed("1004854", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004854 ] ";
+		trigger.addItemClassNamed("1004385", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004385 ] ";
 	}
-	else if(iRandom <= 45)		// 1004855	·¯ºê È«¿°ÀÇ °©¿Ê 0.15%
+	else if(iRandom <= 30)		// 1004387	·¯ºê È«¿°ÀÇ °©¿Ê 0.1%
 	{
-		trigger.addItemClassNamed("1004855", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004855 ] ";
+		trigger.addItemClassNamed("1004387", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004387 ] ";
 	}
-	else if(iRandom <= 65)		// 1004856	·¯ºê È«¿°ÀÇ ÆÈÂî 0.2%
+	else if(iRandom <= 40)		// 1004389	·¯ºê È«¿°ÀÇ ÆÈÂî 0.1%
 	{
-		trigger.addItemClassNamed("1004856", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004856 ] ";
+		trigger.addItemClassNamed("1004389", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004389 ] ";
 	}
-	else if(iRandom <= 115)		// 1004857	·¯ºê È«¿°ÀÇ ½´Áî 0.5%
+	else if(iRandom <= 90)		// 1004646	·¯ºê È«¿°ÀÇ ½´Áî 0.5%
 	{
-		trigger.addItemClassNamed("1004857", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004857 ] ";
+		trigger.addItemClassNamed("1004646", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004646 ] ";
 	}
-	else if(iRandom <= 2115)	// 1001889	½Å¼ÓÀÇ ¿­¸Å 20%
+	else if(iRandom <= 2115)	// 1001808	½Å¼ÓÀÇ ¿­¸Å 20.25%
 	{
-		trigger.addItemClassNamed("1001889", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1001889 ] ";
+		trigger.addItemClassNamed("1001808", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1001808 ] ";
 	}
-	else if(iRandom <= 2715)	// 1004865	·¯ºê È£¶ûÀÌ ¸ğÀÚ 6%
+	else if(iRandom <= 2715)	// 1003017	·¯ºê È£¶ûÀÌ ¸ğÀÚ 6%
 	{
-		trigger.addItemClassNamed("1004865", 1);
-
-		// 2ÀÏ¸¸ »ç¿ë°¡´É
-		ExpireItem("1004865", 60*60*24*2);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004865 ] ";
+		trigger.addItemClassNamed("1003017", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1003017 ] ";
 	}
-	else if(iRandom <= 4715)	// 1001890	ÁúÇ³ÀÇ ¾àÃÊ 20%
+	else if(iRandom <= 4715)	// 1000223	ÁúÇ³ÀÇ ¾àÃÊ 20%
 	{
-		trigger.addItemClassNamed("1001890", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1001890 ] ";
+		trigger.addItemClassNamed("1000223", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1000223 ] ";
 	}
-	else if(iRandom <= 5220)	// 1004866	·¯ºê ³Ê±¸¸® ¸ğÀÚ 5.05%
+	else if(iRandom <= 5220)	// 1000144	·¯ºê ³Ê±¸¸® ¸ğÀÚ 5.05%
 	{
-		trigger.addItemClassNamed("1004866", 1);
-
-		// 2ÀÏ¸¸ »ç¿ë°¡´É
-		ExpireItem("1004866", 60*60*24*2);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004866 ] ";
+		trigger.addItemClassNamed("1000144", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1000144 ] ";
 	}
-	else if(iRandom <= 7220)	// 1001893	Ãàº¹ÀÇ ¼º¼ö 20%
+	else if(iRandom <= 7220)	// 1000222	Ãàº¹ÀÇ ¼º¼ö 20%
 	{
-		trigger.addItemClassNamed("1001893", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1001893 ] ";
+		trigger.addItemClassNamed("1000222", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1000222 ] ";
 	}
-	else if(iRandom <= 7820)	// 1004867	·¯ºê ³Ê±¸¸® ¸ñµµ¸® 6%
+	else if(iRandom <= 7820)	// 1005062	·¯ºê ³Ê±¸¸® ¸ñµµ¸® 6%
 	{
-		trigger.addItemClassNamed("1004867", 1);
-
-		// 2ÀÏ¸¸ »ç¿ë°¡´É
-		ExpireItem("1004867", 60*60*24*2);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004867 ] ";
+		trigger.addItemClassNamed("1005062", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1005062 ] ";
 	}
-	else if(iRandom <= 9820)	// 1001894	ÀûÁßÀÇ Çªµù 20%
+	else if(iRandom <= 9820)	// 1000022	ÀûÁßÀÇ Çªµù 20%
 	{
-		trigger.addItemClassNamed("1001894", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1001894 ] ";
+		trigger.addItemClassNamed("1000022", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1000022 ] ";
 	}
-	else if(iRandom <= 9840)	// 1004858	·¯ºê Å¥ÇÇÆ® Åõ±¸ 0.2%
+	else if(iRandom <= 9840)	// 1004390	·¯ºê Å¥ÇÇÆ® Åõ±¸ 0.2%
 	{
-		trigger.addItemClassNamed("1004858", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004858 ] ";
+		trigger.addItemClassNamed("1004390", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004390 ] ";
 	}
-	else if(iRandom <= 9855)	// 1004859	·¯ºê Å¥ÇÇÆ® ¹æÆĞ 0.15%
+	else if(iRandom <= 9850)	// 1004393	·¯ºê Å¥ÇÇÆ® ¹æÆĞ 0.1%
 	{
-		trigger.addItemClassNamed("1004859", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004859 ] ";
+		trigger.addItemClassNamed("1004393", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004393 ] ";
 	}
-	else if(iRandom <= 9870)	// 1004860	·¯ºê Å¥ÇÇÆ® ºñ³à 0.15%
+	else if(iRandom <= 9870)	// 1004388	·¯ºê Å¥ÇÇÆ® ºñ³à 0.2%
 	{
-		trigger.addItemClassNamed("1004860", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004860 ] ";
+		trigger.addItemClassNamed("1004388", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004388 ] ";
 	}
-	else if(iRandom <= 9880)	// 1004861	·¯ºê Å¥ÇÇÆ® ³¯°³ 0.1%
+	else if(iRandom <= 9880)	// 1004391	·¯ºê Å¥ÇÇÆ® ³¯°³ 0.1%
 	{
-		trigger.addItemClassNamed("1004861", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004861 ] ";
+		trigger.addItemClassNamed("1004391", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004391 ] ";
 	}
-	else if(iRandom <= 9900)	// 1004862	·¯ºê Å¥ÇÇÆ® °©¿Ê 0.2%
+	else if(iRandom <= 9900)	// 1004386	·¯ºê Å¥ÇÇÆ® °©¿Ê 0.2%
 	{
-		trigger.addItemClassNamed("1004862", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004862 ] ";
+		trigger.addItemClassNamed("1004386", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004386 ] ";
 	}
-	else if(iRandom <= 9950)	// 1004863	·¯ºê Å¥ÇÇÆ® ½´Áî 0.5%
+	else if(iRandom <= 9950)	// 1004444	·¯ºê Å¥ÇÇÆ® ½´Áî 0.5%
 	{
-		trigger.addItemClassNamed("1004863", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004863 ] ";
+		trigger.addItemClassNamed("1004444", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1004444 ] ";
 	}
-	else				// 1004864	·¯ºê Å¥ÇÇÆ® Àå°© 0.5%
+	else				// 1002008	·¯ºê Å¥ÇÇÆ® Àå°© 0.5%
 	{
-		trigger.addItemClassNamed("1004864", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1004864 ] ";
+		trigger.addItemClassNamed("1002008", 1);
+		Item_Info = "From Gift Certificate : +ITEM [ 1002008 ] ";
 	}
 
 	trigger.updateAttr();
