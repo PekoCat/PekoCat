@@ -1,0 +1,214 @@
+; $Id: BlockExc.meta,v 0.01 2004/09/09  stsoul Exp $
+;
+; BlockExc.meta
+; 블럭 해제 예외 유저 땜빵 테이블. 감옥 해제시 체크하는 금지 유저 리스트 데이터다.
+;
+; Key 뒤의 필드는 인덱스 0 부터 시작
+; Key = Entry Point. string data.
+; ExceptionValue = NO is exception, YES is not exception.
+; Dummy = string data.
+;-----------------------------------------------------------------------------------------------------------------------------
+;Key		ExceptionValue		Dummy
+;index		NO			1
+;-----------------------------------------------------------------------------------------------------------------------------
+stsoul5		YES			2004/09/09
+글로벌17	NO
+글로벌18	YES
+글로벌19	YES
+;
+;
+;
+; // 상용 서버 예외 대상 리스트
+;=========================================
+;talesa		아노마라드
+;=========================================
+꼼앙이신랑	NO
+꼼앙이신뷰	NO
+돈봉투1	NO
+히데쓰	NO
+;=========================================
+;talesd		레코르다블
+;=========================================
+et123	NO
+etkill	NO
+;=========================================
+;talesf		렘므
+;=========================================
+cuffs	NO
+cuffs1	NO
+cuffs2	NO
+hara1	NO
+hara2	NO
+hara3	NO
+hara4	NO
+hara5	NO
+순수나나	NO
+prettyring	NO
+;
+;
+; // 상용 서버 처리 대상 리스트 (... 넘겨주는 리스트에 공란이 있던데... 제대로 된 걸까...)
+;=========================================
+;talesa		아노마라드
+;=========================================
+-0nepiece-	YES
+귀동이	YES
+데빌나이트	YES
+만날수있다면	YES
+물고기자리	YES
+베기전문기사들	YES
+뼈로가는칼슘	YES
+뽀엔흰	YES
+사랑은곧부활	YES
+사랑은곧죽음	YES
+삼국지	YES
+이츠유니	YES
+풀하우스	YES
+-apocalypse-	YES
+cattle	YES
+cezanne	YES
+cherish	YES
+cordelia	YES
+dkrakskfro	YES
+dkwjdakf78	YES
+dkwlswk78	YES
+dollygirl	YES
+epqlf	YES
+epqlfekzm	YES
+eses	YES
+femmefatale	YES
+fkdleldk09	YES
+fruit	YES
+-genesis-	YES
+glaemfdj78	YES
+kcsgto	YES
+kcsgto0219	YES
+loveinlove	YES
+lovingyou	YES
+matthew	YES
+mosung201	YES
+mylife	YES
+papaya75	YES
+peach	YES
+please	YES
+pouljang	YES
+qkrdytjq	YES
+quffnek78	YES
+s2차칸미녀s2	YES
+segns09	YES
+shsh78	YES
+sinkarin	YES
+soan	YES
+sssssssss	YES
+trebirth	YES
+;=========================================
+;talesc		트라바체스
+;=========================================
+나야트래이	YES
+별자리	YES
+시리우스	YES
+카룰로나	YES
+카카린	YES
+cc0000	YES
+cc5058	YES
+dkaksels	YES
+goatmxj890	YES
+oper247	YES
+rotjdtleo123	YES
+trumpjoker	YES
+trumpnine	YES
+trumpnine03	YES
+vhrvndaa	YES
+vhrvndll	YES
+vhrvndqq	YES
+;=========================================
+;talesd		레코르다블
+;=========================================
+4lang	YES
+계절	YES
+계정	YES
+나갈래	YES
+더지	YES
+도라짱	YES
+만들어가는거야	YES
+밝은달	YES
+시연	YES
+오렌지파인	YES
+의인생	YES
+중복확인	YES
+추억	YES
+ddoyuni	YES
+fowl	YES
+fowl56	YES
+fowl86	YES
+fowl89	YES
+lgem	YES
+lgem01	YES
+lgem02	YES
+llgem	YES
+louisvuitton	YES
+mej1104	YES
+minteang2	YES
+salang	YES
+;=========================================
+;talesf		렘므
+;=========================================
+구금미01	YES
+구금미02	YES
+구금미03	YES
+구금미04	YES
+구금미05	YES
+구금미06	YES
+구금미07	YES
+구금미08	YES
+구금미09	YES
+구금미10	YES
+구금미11	YES
+구금미12	YES
+구l여운zr식	YES
+그댄달라요	YES
+다시만난날	YES
+둘만의비밀	YES
+로보트맨	YES
+리오	YES
+마냥조은아이	YES
+별나	YES
+별나님	YES
+블러드레인	YES
+뽕군	YES
+사랑의시	YES
+세월이지나면	YES
+슈렌	YES
+슝군	YES
+시드	YES
+시우	YES
+아비시니앙	YES
+아스낼	YES
+아스넬	YES
+얄리얄리얄랑셩	YES
+여자	YES
+오나라	YES
+이카펠라	YES
+잠시만안녕	YES
+조국	YES
+초일	YES
+카를	YES
+타츠키	YES
+태극	YES
+폭렬천사	YES
+alchemist로이	YES
+azumi	YES
+ba164	YES
+cocovolt	YES
+debon	YES
+ljo34	YES
+mars10	YES
+mcr	YES
+nana1	YES
+nana17	YES
+nana2	YES
+nana3	YES
+purepoo	YES
+tao	YES
+zktldk	YES
+;
+;
