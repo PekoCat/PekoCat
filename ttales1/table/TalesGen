@@ -1,0 +1,1608 @@
+; Edited By kamisaki_10 2004/4/2 17:15
+;마을(마을에 뿌려져있는 sub-NPC)
+C	"2100016"	Each
+1	WW	0	twChicken.ptn	1	2	3	5	1
+.
+C	"2100049"	Each
+15	WW	0	twPig.ptn	1	2	3	5	1
+.
+C	"2100017"	Each
+30	WW	0	twParrot.ptn	1	5	1	1	1
+.
+;비공격(식물/윙 크리스탈)
+C	"2100065"	Each
+0	WR	0	twRabHerb.ptn	(955,203)-(1026,272)	20	60	10	15	20
+0	WR	0	twRabHerb.ptn	(519,97)-(591,131)	20	60	10	15	20
+0	WR	0	twRabHerb.ptn	(1046,1000)-(1101,1079)	20	60	10	15	20
+0	WR	0	twRabHerb.ptn	(103,374)-(134,422)	20	60	10	15	20
+.
+C	"2100062"	Each
+0	WR	0	twRedBerryTree.ptn	(1005,202)-(1013,221)	20	60	1	2	20
+0	WR	0	twRedBerryTree.ptn	(607,604)-(615,613)	20	60	1	2	20
+19	WR	0	twRedBerryTree.ptn	(414,302)-(433,318)	20	60	1	2	20
+55	WR	0	twRedBerryTree.ptn	(348,424)-(394,455)	20	60	1	2	20
+58	WR	0	twRedBerryTree.ptn	(538,402)-(577,419)	20	60	1	2	20
+65	WR	0	twRedBerryTree.ptn	(671,707)-(715,732)	20	60	1	2	20
+67	WR	0	twRedBerryTree.ptn	(881,310)-(939,349)	20	60	1	2	20
+67	WR	0	twRedBerryTree.ptn	(375,566)-(420,609)	20	60	1	2	20
+77	WR	0	twRedBerryTree.ptn	(570,358)-(623,389)	20	60	1	2	20
+77	WR	0	twRedBerryTree.ptn	(302,902)-(349,923)	20	60	1	2	20
+85	WR	0	twRedBerryTree.ptn	(181,503)-(217,527)	20	60	1	2	20
+119	WR	0	twRedBerryTree.ptn	(269,181)-(331,197)	20	60	1	2	1
+.
+C	"2100063"	Each
+0	WR	0	twBlueBerryTree.ptn	(557,78)-(565,88)	20	60	1	2	20
+0	WR	0	twBlueBerryTree.ptn	(117,401)-(123,410)	20	60	1	2	20
+19	WR	0	twBlueBerryTree.ptn	(177,490)-(200,502)	20	60	1	2	20
+19	WR	0	twBlueBerryTree.ptn	(648,780)-(663,803)	20	60	1	2	20
+55	WR	0	twBlueBerryTree.ptn	(360,779)-(415,797)	20	60	1	2	20
+58	WR	0	twBlueBerryTree.ptn	(910,338)-(946,355)	20	60	1	2	20
+58	WR	0	twBlueBerryTree.ptn	(373,357)-(425,375)	20	60	1	2	20
+65	WR	0	twBlueBerryTree.ptn	(238,470)-(289,493)	20	60	1	2	20
+67	WR	0	twBlueBerryTree.ptn	(1173,1067)-(1235,1094)	20	60	1	2	20
+77	WR	0	twBlueBerryTree.ptn	(729,596)-(769,615)	20	60	1	2	20
+85	WR	0	twBlueBerryTree.ptn	(642,490)-(683,501)	20	60	1	2	20
+119	WR	0	twBlueBerryTree.ptn	(538,483)-(604,519)	20	60	1	2	1
+119	WR	0	twBlueBerryTree.ptn	(935,873)-(974,896)	20	60	1	2	1
+.
+C	"2100064"	Each
+0	WR	0	twWhiteBerryTree.ptn	(1086,1050)-(1088,1057)	20	60	1	2	20
+19	WR	0	twWhiteBerryTree.ptn	(500,642)-(533,661)	20	60	1	2	20
+55	WR	0	twWhiteBerryTree.ptn	(699,933)-(751,955)	20	60	1	2	20
+55	WR	0	twWhiteBerryTree.ptn	(974,442)-(1010,454)	20	60	1	2	20
+58	WR	0	twWhiteBerryTree.ptn	(350,847)-(394,856)	20	60	1	2	20
+65	WR	0	twWhiteBerryTree.ptn	(470,822)-(509,837)	20	60	1	2	20
+65	WR	0	twWhiteBerryTree.ptn	(638,275)-(679,282)	20	60	1	2	20
+67	WR	0	twWhiteBerryTree.ptn	(1138,573)-(1196,614)	20	60	1	2	20
+77	WR	0	twWhiteBerryTree.ptn	(799,956)-(839,974)	20	60	1	2	20
+85	WR	0	twWhiteBerryTree.ptn	(393,227)-(431,248)	20	60	1	2	20
+85	WR	0	twWhiteBerryTree.ptn	(393,672)-(433,692)	20	60	1	2	20
+119	WR	0	twWhiteBerryTree.ptn	(295,762)-(349,794)	20	60	1	2	1
+.
+C	"2100025"	Each
+4	WW	0	twWingCrystal.ptn	80	60	5	10	50
+10	WW	0	twWingCrystal.ptn	80	60	5	10	20
+19	WW	0	twWingCrystal.ptn	80	60	5	10	20
+20	WW	0	twWingCrystal.ptn	80	60	5	10	20
+21	WW	0	twWingCrystal.ptn	80	60	5	10	20
+67	WW	0	twWingCrystal.ptn	80	60	5	10	20
+85	WW	0	twWingCrystal.ptn	80	60	5	10	20
+112	WW	0	twWingCrystal.ptn	80	60	1	1	1
+113	WW	0	twWingCrystal.ptn	80	60	1	1	1
+235	WW	0	twWingCrystal.ptn	80	60	1	1	1
+237	WW	0	twWingCrystal.ptn	80	60	1	1	1
+251	WW	0	twWingCrystal.ptn	80	60	1	1	1
+428	WW	0	twWingCrystal.ptn	80	60	1	1	1
+422	WR	0	twWingCrystal.ptn	(80,250)-(330,330)	80	60	1	1	1
+.
+C	"2100059"	Each
+56	WP	0	twSpiritHerb.ptn	(547,109)	20	60	1	2	20
+56	WP	0	twSpiritHerb.ptn	(526,541)	20	60	1	2	20
+57	WP	0	twSpiritHerb.ptn	(524,93)	20	60	1	2	20
+57	WP	0	twSpiritHerb.ptn	(310,546)	20	60	1	2	20
+.
+C	"2100286"	Each
+373	WR	0	twMineral.ptn	(58,57)-(87,65)	25	1	2	3	10
+.
+C	"2100287"	Each
+373	WR	0	twMineral.ptn	(58,95)-(65,117)	25	1	2	3	10
+.
+C	"2100288"	Each
+373	WR	0	twMineral.ptn	(109,57)-(125,65)	25	1	2	3	10
+.
+C	"2100289"	Each
+373	WR	0	twMineral.ptn	(86,111)-(101,118)	25	1	2	3	10
+.
+C	"2100376"	Each
+419	WW	0	twMineral2.ptn	25	1	4	5	10
+.
+C	"2100377"	Each
+419	WW	0	twMineral2.ptn	25	1	4	5	10
+.
+C	"2100378"	Each
+420	WW	0	twMineral3.ptn	25	1	4	5	10
+.
+C	"2100379"	Each
+420	WW	0	twMineral3.ptn	25	1	4	5	10
+.
+;고양이(여름 퀘스트)
+R	"9000304"	Random	3	1	12
+67	WW	0
+119	WW	0
+.
+;약초(채집 스킬대응)
+R	"9000371"	Each
+4	WW	0	15	5	12	16	50
+77	WW	0	15	5	6	8	25
+90	WW	0	15	5	6	8	25
+9	WW	0	15	5	6	8	25
+65	WW	0	15	5	12	16	50
+18	WW	0	15	5	12	16	50
+66	RR	0	(0,0)-(700,1200)	15	5	6	8	25
+17	WW	0	15	5	6	8	25
+10	WW	0	15	5	12	16	50
+58	WW	0	15	5	12	16	50
+67	WW	0	15	5	12	16	50
+119	WW	0	15	5	12	16	50
+55	WW	0	15	5	6	8	25
+0	WW	0	15	5	6	8	25
+19	WW	0	15	5	12	16	50
+20	WW	0	15	5	12	16	50
+21	WW	0	15	5	12	16	50
+88	WW	0	15	5	6	8	25
+89	WW	0	15	5	6	8	25
+117	WW	0	15	5	6	8	25
+85	WW	0	15	5	12	16	50
+.
+R	"9000372"	Each
+4	WW	0	15	5	6	8	25
+77	WW	0	15	5	12	16	50
+90	WW	0	15	5	12	16	50
+9	WW	0	15	5	12	16	50
+65	WW	0	15	5	6	8	25
+18	WW	0	15	5	6	8	25
+66	RR	0	(0,0)-(700,1200)	15	5	12	16	50
+17	WW	0	15	5	12	16	50
+10	WW	0	15	5	6	8	25
+58	WW	0	15	5	6	8	25
+67	WW	0	15	5	6	8	25
+119	WW	0	15	5	6	8	25
+55	WW	0	15	5	12	16	50
+0	WW	0	15	5	12	16	50
+19	WW	0	15	5	6	8	25
+20	WW	0	15	5	6	8	25
+21	WW	0	15	5	6	8	25
+88	WW	0	15	5	12	16	50
+89	WW	0	15	5	12	16	50
+117	WW	0	15	5	12	16	50
+85	WW	0	15	5	6	8	25
+.
+R	"9000373"	Each
+201	WW	0	30	10	3	5	25
+455	WW	0	30	10	3	5	25
+236	WW	0	30	10	3	5	25
+456	WW	0	30	10	3	5	25
+458	WW	0	30	10	3	5	25
+461	WW	0	30	10	3	5	25
+372	WW	0	30	10	3	5	25
+375	WW	0	30	10	3	5	25
+250	WW	0	30	10	3	5	25
+292	WW	0	30	10	3	5	25
+.
+R	"9000374"	Each
+88	WW	0	30	10	2	4	20
+89	WW	0	30	10	2	4	20
+117	WW	0	30	10	2	4	20
+85	WW	0	30	10	2	4	20
+201	WW	0	30	10	3	5	25
+455	WW	0	30	10	3	5	25
+236	WW	0	30	10	3	5	25
+456	WW	0	30	10	3	5	25
+458	WW	0	30	10	3	5	25
+461	WW	0	30	10	3	5	25
+.
+R	"9000375"	Each
+4	WW	0	45	15	1	2	20
+77	WW	0	45	15	1	2	20
+90	WW	0	45	15	1	2	20
+9	WW	0	45	15	1	2	20
+65	WW	0	45	15	1	2	20
+18	WW	0	45	15	1	2	20
+66	RR	0	(0,0)-(700,1200)	45	15	1	2	20
+17	WW	0	45	15	1	2	20
+10	WW	0	45	15	1	2	20
+58	WW	0	45	15	1	2	20
+201	WW	0	45	15	3	5	25
+455	WW	0	45	15	3	5	25
+236	WW	0	45	15	3	5	25
+456	WW	0	45	15	3	5	25
+458	WW	0	45	15	3	5	25
+461	WW	0	45	15	3	5	25
+.
+R	"9000376"	Each
+67	WW	0	45	15	1	2	20
+119	WW	0	45	15	1	2	20
+55	WW	0	45	15	1	2	20
+0	WW	0	45	15	1	2	20
+19	WW	0	45	15	1	2	20
+20	WW	0	45	15	1	2	20
+21	WW	0	45	15	1	2	20
+88	WW	0	45	15	1	2	20
+89	WW	0	45	15	1	2	20
+117	WW	0	45	15	1	2	20
+85	WW	0	45	15	1	2	20
+201	WW	0	45	15	3	5	25
+455	WW	0	45	15	3	5	25
+236	WW	0	45	15	3	5	25
+456	WW	0	45	15	3	5	25
+458	WW	0	45	15	3	5	25
+461	WW	0	45	15	3	5	25
+.
+R	"9000377"	Each
+56	WW	0	15	5	3	5	25
+372	WW	0	15	5	3	5	25
+375	WW	0	15	5	3	5	25
+250	WW	0	15	5	3	5	25
+292	WW	0	15	5	3	5	25
+3	WW	0	15	5	3	5	25
+61	WW	0	15	5	3	5	25
+.
+R	"9000378"	Each
+112	WW	0	15	5	3	5	25
+113	WW	0	15	5	3	5	25
+235	ww	0	15	5	3	5	25
+.
+R	"9000379"	Each
+56	WW	0	15	5	1	3	25
+57	WW	0	45	15	3	5	25
+.
+R	"9000380"	Each
+3	WW	0	15	10	1	2	25
+44	WW	0	15	10	2	3	25
+49	WW	0	15	10	1	2	25
+.
+R	"9000381"	Each
+201	WW	0	45	15	3	5	25
+236	WW	0	15	5	3	5	25
+.
+;페나인 숲/루모리 죽림
+C	"2100060"	Each
+85	WR	0	twWildCat.ptn	(400,0)-(950,500)	1	3	50	90	75
+89	WR	0	twWildCat.ptn	(400,0)-(700,400)	1	3	25	70	100
+.
+C	"2100022"	Each
+85	WW	0	twJellypiL.ptn	2	6	75	120	100
+89	WW	0	twJellypiL.ptn	2	6	25	70	100
+.
+C	"2100057"	Each
+85	WR	0	twIpariMan.ptn	(400,400)-(950,900)	1	3	50	75	75
+88	WR	0	twIpariMan.ptn	(0,0)-(250,400)	1	3	25	50	100
+89	WR	0	twIpariMan.ptn	(0,0)-(1100,400)	1	3	50	50	100
+.
+C	"2100020"	Each
+85	WR	0	twKaniBore.ptn	(0,0)-(500,400)	3	3	25	50	50
+.
+C	"2100066"	Each
+85	WR	0	twMushroomBoy.ptn	(0,400)-(650,900)	3	3	25	50	50
+89	WR	0	twMushroomBoy.ptn	(0,0)-(700,700)	3	3	50	75	75
+117	WW	0	twMushroomBoy.ptn	3	3	25	50	75
+.
+C	"2100021"	Each
+85	WR	0	twGrJellypi.ptn	(0,400)-(650,900)	6	8	25	50	75
+.
+C	"2100067"	Each
+85	WR	0	twFlowerMon.ptn	(0,400)-(650,900)	4	4	25	50	25
+88	WW	0	twFlowerMon.ptn	4	4	75	75	100
+89	WW	0	twFlowerMon.ptn	4	4	75	75	75
+117	WW	0	twFlowerMon.ptn	4	4	50	75	75
+.
+C	"2100501"	Each
+85	WW	0	twNov04_SlippiMan.ptn	4	4	15	30	25
+.
+C	"2100068"	Each
+88	WW	0	twRubberTick.ptn	5	4	25	50	75
+89	WR	0	twRubberTick.ptn	(0,400)-(1100,1100)	5	4	75	75	50
+117	WW	0	twRubberTick.ptn	5	4	25	50	50
+.
+C	"2100069"	Each
+88	WR	0	twBearPig.ptn	(0,100)-(600,600)	6	4	75	75	75
+89	WR	0	twBearPig.ptn	(400,400)-(1100,1100)	6	4	50	50	50
+117	WR	0	twBearPig.ptn	(0,0)-(600,1100)	6	4	50	75	50
+.
+C	"2100076"	Each
+88	WR	0	twSkullWarrior.ptn	(450,450)-(950,1100)	12	10	75	75	100
+117	WR	0	twSkullWarrior.ptn	(550,450)-(1100,1100)	12	10	50	75	100
+.
+C	"2100190"	Each
+88	WR	0	twRSIpariMan.ptn	(450,0)-(750,1100)	7	4	50	75	50
+117	WW	0	twRSIpariMan.ptn	7	4	25	50	50
+.
+C	"2100039"	Each
+88	WR	2	twSickle.ptn	(700,0)-(1100,300)	12	4	25	50	25
+89	WR	2	twSickle.ptn	(600,800)-(1100,1100)	12	4	25	50	25
+117	WR	2	twSickle.ptn	(700,0)-(1100,700)	12	4	20	50	25
+.
+C	"2100118"	Each
+89	WW	0	twFretaDeath.ptn	2420	60	1	1	1
+.
+C	"2100023"	Each
+117	WW	0	twGrJellypiL.ptn	6	10	50	75	100
+.
+C	"2100095"	Each
+201	WW	0	twWorm.ptn	22	7	15	50	75
+455	WW	0	twWorm.ptn	22	7	15	50	75
+.
+C	"2100124"	Each
+201	WW	0	twMutuhoWhite.ptn	25	10	15	50	50
+455	WW	0	twMutuhoWhite.ptn	25	10	15	50	50
+.
+C	"2100498"	Each
+201	WW	0	twNov04_PinkyBearPig.ptn	25	10	15	50	50
+455	WW	0	twNov04_PinkyBearPig.ptn	25	10	15	50	50
+456	WW	0	twNov04_PinkyBearPig.ptn	29	10	20	40	40
+.
+C	"2100212"	Each
+201	WR	0	twDragon.ptn	(0,0)-(150,350)	29	10	10	20	25
+455	WW	0	twDragon.ptn	29	10	10	20	25
+.
+C	"2100340"	Each
+236	WW	0	twSickleLance_11.ptn	22	7	25	50	75
+.
+C	"2100389"	Each
+236	WW	0	twSickleShovel_12.ptn	22	7	25	50	75
+.
+C	"2100236"	Each
+236	WW	0	twMoth_Lv62.ptn	29	10	20	40	50
+.
+C	"2100415"	Each
+236	WW	0	twChamp_SickleLance11.ptn	900	60	1	1	1
+.
+C	"2100505"	Each
+236	WW	0	twNov04_PoisonPupirum.ptn	29	10	20	40	50
+.
+C	"2100117"	Each
+456	WW	0	twBHobee.ptn	18	7	20	40	50
+.
+C	"2100520"	Each
+456	WW	0	twDec10_BulrumBambu.ptn	18	7	20	40	50
+458	WW	0	twDec10_BulrumBambu.ptn	18	7	15	30	50
+461	WR	0	twDec10_BulrumBambu.ptn	(0,0)-(400,800)	18	7	20	40	50
+.
+C	"2100521"	Each
+456	WW	0	twDec10_Hadong.ptn	18	7	20	40	50
+.
+C	"2100517"	Each
+458	WW	1	twDec10_Humpty.ptn	18	7	20	40	50
+461	WR	1	twDec10_Humpty.ptn	(0,0)-(400,800)	18	7	20	30	50
+.
+C	"2100516"	Each
+458	WW	2	twDec10_Antelope.ptn	18	7	10	15	25
+461	WR	2	twDec10_Antelope.ptn	(0,0)-(400,800)	18	7	10	20	25
+.
+C	"2100518"	Each
+458	WW	2	twDec10_Dumpty.ptn	18	7	15	30	50
+461	WR	2	twDec10_Dumpty.ptn	(0,0)-(400,800)	18	7	20	30	50
+.
+C	"2100519"	Each
+458	WW	2	twDec10_JumpingPuppy.ptn	18	7	20	40	50
+461	WR	2	twDec10_JumpingPuppy.ptn	(0,0)-(400,800)	18	7	15	30	50
+.
+C	"2100525"	Each
+461	WR	0	twJan06_WooDong.ptn	(460,0)-(830,800)	18	7	20	40	50
+.
+C	"2100526"	Each
+461	WR	0	twJan06_Mantis.ptn	(460,0)-(830,800)	18	7	15	30	50
+.
+C	"2100529"	Each
+461	WR	0	twJan06_Monoful.ptn	(460,0)-(830,800)	18	7	15	30	50
+.
+C	"2100527"	Each
+461	WR	2	twJan06_FluorDemon.ptn	(460,0)-(830,800)	18	7	10	20	25
+.
+C	"2100533"	Each
+461	WR	0	twJan11_EvilHair.ptn	(460,0)-(830,800)	3600	60	1	1	1
+.
+C	"2100534"	Each
+455	WW	0	twJan14_CatHand.ptn	3600	60	1	1	1
+.
+C	"2100552"	Each
+461	WR	1	twFeb17_BalletLily.ptn	(0,0)-(400,800)	18	7	20	30	50
+.
+C	"2100553"	Each
+464	WW	0	twFeb22_Alruko.ptn	30	15	25	40	100
+.
+C	"2100554"	Each
+464	WW	0	twFeb22_NoBrain.ptn	30	15	22	35	75
+.
+C	"2100555"	Each
+464	WW	0	twFeb22_TaoistChicken.ptn	30	15	18	30	50
+.
+C	"2100557"	Each
+464	WW	0	twFeb22_SwordShaman.ptn	3600	60	1	1	1
+.
+C	"2100551"	Each
+455	WW	0	twFeb17_WoodSpirit.ptn	30	15	10	20	25
+.
+C	"2100549"	Each
+461	WR	2	twFeb17_Gigameura.ptn	(460,0)-(830,800)	18	7	10	20	25
+.
+C	"2100553"	Each
+476	WW	0	twFeb22_Alruko.ptn	30	15	25	40	100
+.
+C	"2100554"	Each
+476	WW	0	twFeb22_NoBrain.ptn	30	15	22	35	75
+.
+C	"2100556"	Each
+476	WW	0	twFeb22_Taurus.ptn	30	15	15	20	25
+.
+C	"2100577"	Each
+476	WW	0	twMar03_WindMouse.ptn	30	15	5	10	50
+.
+C	"2100575"	Each
+456	WW	0	twMar03_Carbuncle.ptn	600	60	1	1	1
+458	WW	0	twMar03_Carbuncle.ptn	600	60	1	1	1
+461	WW	0	twMar03_Carbuncle.ptn	600	60	1	1	1
+464	WW	0	twMar03_Carbuncle.ptn	600	60	1	1	1
+476	WW	0	twMar03_Carbuncle.ptn	600	60	1	1	1
+.
+;셀바스 평원
+C	"2100003"	Each
+0	WW	0	twFreta.ptn	14	10	75	100	100
+.
+C	"2100054"	Each
+0	WW	0	twAzidahaka.ptn	12	4	75	100	75
+55	WR	0	twAzidahaka.ptn	(700,0)-(1100,1100)	12	4	25	50	25
+.
+C	"2100033"	Each
+0	WW	0	twSkiya.ptn	14	7	50	75	50
+.
+C	"2100024"	Each
+0	WW	0	twMutuho.ptn	14	7	25	50	50
+.
+C	"2100043"	Each
+0	WW	2	twDKnight.ptn	17	7	25	50	25
+55	WR	2	twDKnight.ptn	(500,0)-(950,500)	17	7	15	25	25
+.
+C	"2100119"	Each
+0	WW	0	twAzidahaka_J.ptn	2430	60	1	1	1
+.
+C	"2100035"	Each
+19	WW	0	twBaybing.ptn	1	3	75	110	100
+20	WR	0	twBaybing.ptn	(0,600)-(600,900)	1	3	40	60	75
+21	WR	0	twBaybing.ptn	(0,0)-(1000,500)	1	3	60	110	75
+67	WR	0	twBaybing.ptn	(700,600)-(1350,1350)	1	3	75	110	75
+.
+C	"2100044"	Each
+19	WW	0	twHoneyBee.ptn	1	3	50	75	100
+20	WR	0	twHoneyBee.ptn	(400,300)-(700,650)	1	3	25	50	75
+21	WR	0	twHoneyBee.ptn	(0,400)-(1000,900)	1	3	35	75	75
+67	WR	0	twHoneyBee.ptn	(0,900)-(850,1350)	1	3	75	100	75
+.
+C	"2100045"	Each
+19	WR	0	twDduddu.ptn	(150,450)-(450,1000)	2	3	50	85	75
+67	WR	0	twDduddu.ptn	(0,0)-(700,400)	2	3	75	110	75
+.
+C	"2100185"	Each
+19	WR	0	twDduRuddu.ptn	(400,600)-(700,1000)	2	3	25	50	75
+20	WR	0	twDduRuddu.ptn	(400,300)-(900,900)	2	3	25	50	75
+21	WR	0	twDduRuddu.ptn	(0,0)-(750,350)	2	3	20	50	75
+67	WR	0	twDduRuddu.ptn	(0,300)-(700,800)	2	3	25	50	50
+.
+C	"2100186"	Each
+19	WR	0	twDdoddo.ptn	(600,600)-(1000,1000)	2	3	25	50	50
+67	WR	0	twDdoddo.ptn	(0,700)-(700,1350)	2	3	25	50	50
+.
+C	"2100187"	Each
+19	WR	0	twBaybingBrown.ptn	(400,700)-(1000,1000)	3	3	25	50	50
+.
+C	"2100022"	Each
+20	WW	0	twJellypiL.ptn	2	8	75	100	100
+21	WW	0	twJellypiL.ptn	2	8	50	75	100
+67	WW	0	twJellypiL.ptn	2	8	50	75	100
+.
+C	"2100020"	Each
+20	WR	0	twKaniBore.ptn	(0,0)-(600,500)	2	3	25	50	50
+21	WR	0	twKaniBore.ptn	(0,350)-(1000,700)	2	3	20	50	50
+55	WW	0	twKaniBore.ptn	2	3	75	100	100
+67	WR	0	twKaniBore.ptn	(800,350)-(1350,900)	2	3	25	50	50
+.
+C	"2100187"	Each
+20	WR	0	twBaybingBrown.ptn	(0,0)-(600,400)	3	3	25	50	50
+21	WR	0	twBaybingBrown.ptn	(0,650)-(1000,1050)	3	3	20	50	50
+55	WW	0	twBaybingBrown.ptn	3	3	75	100	100
+67	WR	0	twBaybingBrown.ptn	(850,0)-(1350,600)	3	3	25	50	25
+.
+C	"2100070"	Each
+55	WW	0	twTreeMon.ptn	5	4	25	50	75
+119	WW	0	twTreeMon.ptn	5	4	35	50	75
+.
+C	"2100188"	Each
+55	WW	0	twWonMKus.ptn	5	4	25	50	75
+.
+C	"2100038"	Each
+55	WR	0	twSunMine.ptn	(0,0)-(1100,550)	5	4	25	50	50
+119	WW	0	twSunMine.ptn	5	4	50	75	50
+.
+C	"2100069"	Each
+55	WR	0	twBearPig.ptn	(0,500)-(1100,1100)	6	4	25	50	50
+.
+C	"2100042"	Each
+119	WR	0	twCramino.ptn	(0,650)-(1050,1000)	5	4	25	50	75
+.
+C	"2100052"	Each
+119	WR	0	twHorseBee.ptn	(0,400)-(1050,700)	6	4	35	50	50
+.
+C	"2100386"	Each
+119	WW	0	twUnibi.ptn	1200	60	1	1	1
+.
+C	"2100061"	Each
+119	WR	0	twGrScorpion.ptn	(0,0)-(1050,450)	7	4	35	50	50
+.
+C	"2100076"	Each
+119	WW	0	twSkullWarrior.ptn	12	10	50	75	100
+.
+;크라이덴 평원
+C	"2100009"	Each
+4	WR	0	twJellypi.ptn	(0,550)-(750,1000)	2	5	50	125	100
+10	WW	0	twJellypi.ptn	2	5	100	150	100
+17	WR	0	twJellypi.ptn	(850,0)-(1100,650)	2	5	25	50	100
+.
+C	"2100022"	Each
+4	WR	0	twJellypiL.ptn	(300,500)-(1050,650)	2	5	50	75	100
+4	WR	0	twJellypiL.ptn	(0,600)-(300,1000)	2	5	25	50	100
+10	WW	0	twJellypiL.ptn	2	5	70	75	100
+.
+C	"2100045"	Each
+4	WR	0	twDduddu.ptn	(0,0)-(1050,450)	2	3	50	75	50
+10	WR	0	twDduddu.ptn	(650,0)-(1050,1100)	2	3	75	75	50
+17	WR	0	twDduddu.ptn	(650,0)-(1000,700)	2	3	25	50	75
+.
+C	"2100185"	Each
+4	WR	0	twDduRuddu.ptn	(0,0)-(1050,300)	2	3	25	50	50
+10	WR	0	twDduRuddu.ptn	(300,0)-(700,1100)	2	3	40	50	50
+.
+C	"2100019"	Each
+4	WR	0	twMine.ptn	(900,0)-(1050,700)	2	3	15	40	50
+9	WR	1	twMine.ptn	(425,700)-(700,950)	2	3	15	25	100
+9	WR	2	twMine.ptn	(0,420)-(525,650)	2	3	15	25	100
+17	WW	0	twMine.ptn	2	3	50	75	75
+77	WR	0	twMine.ptn	(0,0)-(1100,600)	2	3	50	75	75
+90	WR	0	twMine.ptn	(900,550)-(1200,1050)	2	3	25	50	75
+.
+C	"2100053"	Each
+4	WR	0	twScorpion.ptn	(800,0)-(1050,350)	3	3	10	40	25
+9	WR	1	twScorpion.ptn	(0,0)-(475,400)	3	3	15	25	50
+9	WR	2	twScorpion.ptn	(0,0)-(400,600)	3	3	15	25	50
+10	WR	0	twScorpion.ptn	(700,0)-(950,400)	3	3	25	50	25
+66	WR	0	twScorpion.ptn	(0,0)-(650,1000)	3	3	40	75	75
+77	WR	0	twScorpion.ptn	(0,0)-(1100,600)	3	3	50	75	75
+.
+C	"2100004"	Each
+4	WW	0	twHoneyBear.ptn	17	10	1	1	100
+77	WR	0	twHoneyBear.ptn	(0,800)-(1100,1100)	14	10	25	50	100
+90	WR	0	twHoneyBear.ptn	(0,0)-(1200,600)	14	10	50	75	100
+.
+C	"2100186"	Each
+9	WR	0	twDdoddo.ptn	(300,600)-(550,850)	2	3	35	50	100
+10	WR	0	twDdoddo.ptn	(0,0)-(350,1100)	2	3	25	50	50
+17	WR	0	twDdoddo.ptn	(0,650)-(850,1100)	2	3	50	75	75
+77	WW	0	twDdoddo.ptn	2	3	75	100	100
+.
+C	"2100021"	Each
+9	WR	0	twGrJellypi.ptn	(400,0)-(900,450)	2	6	50	75	100
+17	WR	0	twGrJellypi.ptn	(400,0)-(850,700)	2	6	50	50	100
+.
+C	"2100070"	Each
+9	WR	0	twTreeMon.ptn	(500,0)-(800,500)	5	4	10	30	25
+90	WR	0	twTreeMon.ptn	(0,0)-(1200,400)	5	4	20	35	75
+.
+C	"2100042"	Each
+9	WR	0	twCramino.ptn	(600,0)-(950,525)	3	4	10	20	25
+17	WR	0	twCramino.ptn	(200,550)-(550,700)	3	4	15	40	50
+58	WW	1	twCramino.ptn	3	4	40	75	100
+90	WR	0	twCramino.ptn	(0,400)-(900,1050)	3	4	20	50	75
+.
+C	"2100037"	Each
+9	WR	0	twRedMine.ptn	(700,500)-(850,600)	3	4	10	20	25
+18	WW	0	twRedMine.ptn	3	4	50	100	100
+65	WR	0	twRedMine.ptn	(0,0)-(1000,700)	3	4	65	100	75
+66	WR	0	twRedMine.ptn	(450,700)-(650,1200)	3	4	20	50	50
+77	WR	0	twRedMine.ptn	(0,400)-(1100,1100)	3	4	50	75	50
+.
+C	"2100048"	Each
+17	WR	0	twDuckWarrior.ptn	(0,0)-(400,800)	4	3	15	30	25
+65	WR	0	twDuckWarrior.ptn	(0,0)-(1000,700)	4	3	65	100	75
+66	WR	0	twDuckWarrior.ptn	(0,800)-(650,1200)	4	3	35	75	50
+77	WR	0	twDuckWarrior.ptn	(0,400)-(1100,1100)	4	3	25	50	50
+.
+C	"2100072"	Each
+17	WW	0	twJellyKing.ptn	1200	60	1	1	1
+.
+C	"2100018"	Each
+18	WR	0	twRogleBegle.ptn	(500,500)-(800,800)	6	4	20	50	75
+58	WR	0	twRogleBegle.ptn	(0,0)-(500,500)	6	4	25	50	50
+65	WR	0	twRogleBegle.ptn	(0,400)-(1000,1000)	6	4	50	75	50
+90	WR	0	twRogleBegle.ptn	(0,0)-(1200,400)	6	4	25	50	50
+.
+C	"2100061"	Each
+18	WR	0	twGrScorpion.ptn	(750,600)-(1050,1100)	7	4	25	50	75
+58	WR	0	twGrScorpion.ptn	(0,650)-(1000,1100)	7	4	40	75	50
+90	WR	0	twGrScorpion.ptn	(0,0)-(1200,400)	7	4	25	50	50
+.
+C	"2100076"	Each
+18	WR	0	twSkullWarrior.ptn	(600,0)-(1050,500)	12	10	35	50	100
+.
+C	"2100003"	Each
+18	WW	0	twFreta.ptn	5	4	65	100	100
+58	WW	0	twFreta.ptn	14	10	40	75	100
+65	WW	0	twFreta.ptn	14	10	50	75	100
+.
+C	"2100034"	Each
+18	WW	2	twPumkin.ptn	12	4	15	30	50
+58	WW	2	twPumkin.ptn	12	4	15	40	25
+65	WR	2	twPumkin.ptn	(425,400)-(550,500)	12	4	15	50	25
+.
+C	"2100188"	Each
+58	WW	2	twWonMKus.ptn	5	4	25	50	100
+65	WW	0	twWonMKus.ptn	5	4	20	50	75
+66	WR	0	twWonMKus.ptn	(0,0)-(650,1000)	5	4	15	50	50
+90	WR	0	twWonMKus.ptn	(0,400)-(900,1050)	5	4	20	35	75
+.
+C	"2100052"	Each
+58	WR	0	twHorseBee.ptn	(0,300)-(600,700)	6	4	40	75	50
+65	WR	0	twHorseBee.ptn	(0,400)-(1000,1000)	6	4	50	75	50
+66	WR	0	twHorseBee.ptn	(0,0)-(1000,300)	6	4	20	50	25
+.
+C	"2100024"	Each
+58	WR	0	twMutuho.ptn	(700,0)-(1000,700)	14	7	10	15	25
+.
+C	"2100195"	Each
+58	WW	0	twDduQueen.ptn	1890	60	1	1	1
+.
+C	"2100123"	Each
+65	WW	0	twPumkinRot.ptn	2530	60	1	1	1
+.
+C	"2100023"	Each
+66	WR	0	twGrJellypiL.ptn	(0,350)-(1000,650)	6	10	90	100	100
+90	WR	0	twGrJellypiL.ptn	(900,550)-(1200,1050)	6	10	35	50	100
+.
+C	"2100194"	Each
+77	WW	0	twDduKing.ptn	1870	60	1	1	1
+.
+C	"2100417"	Each
+90	WR	0	twChamp_HoneyBear.ptn	(0,0)-(1200,600)	900	60	1	1	1
+.
+C	"2100524"	Each
+90	WW	0	twDec15_CraminoTatu.ptn	3600	60	1	1	1
+.
+;팔렌시아/속삭임의 해안
+C	"2100006"	Each
+2	WR	0	twBukurum.ptn	(0,400)-(600,600)	6	4	30	75	100
+25	WR	0	twBukurum.ptn	(0,650)-(350,1050)	6	4	25	50	50
+.
+C	"2100014"	Each
+2	WR	0	twSyaPeer.ptn	(0,100)-(600,450)	10	4	30	40	75
+50	WR	0	twSyaPeer.ptn	(300,300)-(550,550)	10	4	10	40	50
+.
+C	"2100191"	Each
+2	WW	0	twKrakenJr.ptn	10	4	40	80	75
+50	WR	0	twKrakenJr.ptn	(0,200)-(800,600)	10	4	25	40	50
+.
+C	"2100502"	Each
+2	WW	0	twNov04_Clam.ptn	10	4	30	60	75
+.
+C	"2100010"	Each
+2	WR	0	twSimTong.ptn	(0,100)-(600,450)	10	4	30	40	75
+50	WR	0	twSimTong.ptn	(300,300)-(550,550)	10	4	10	40	50
+.
+C	"2100046"	Each
+25	WW	0	twMangdung.ptn	4	4	100	150	100
+121	WW	0	twMangdung.ptn	4	4	100	150	100
+.
+C	"2100055"	Each
+25	WR	0	twTako.ptn	(0,300)-(500,800)	5	4	50	75	75
+121	WR	0	twTako.ptn	(0,300)-(650,800)	5	4	50	75	75
+.
+C	"2100189"	Each
+25	WR	0	twMangWarrior.ptn	(300,350)-(700,1050)	6	4	25	50	50
+121	WR	0	twMangWarrior.ptn	(0,450)-(800,1000)	6	4	40	50	50
+.
+C	"2100008"	Each
+25	WR	0	twDuckWarriorS.ptn	(450,500)-(850,1050)	7	4	25	50	50
+50	WW	0	twDuckWarriorS.ptn	7	4	60	80	100
+121	WR	0	twDuckWarriorS.ptn	(400,350)-(900,1000)	7	4	35	50	50
+.
+C	"2100413"	Each
+25	WW	0	twChamp_MangWarrior.ptn	900	60	1	1	1
+.
+C	"2100041"	Each
+50	WR	0	twSoraCap.ptn	(0,500)-(800,800)	7	4	30	60	75
+121	WR	0	twSoraCap.ptn	(0,600)-(600,1000)	7	4	30	50	50
+.
+C	"2100109"	Each
+50	WW	0	twEnvinion.ptn	1300	60	1	1	1
+.
+C	"2100074"	Each
+341	WW	0	twGMangdung.ptn	11	4	50	100	50
+.
+C	"2100192"	Each
+341	WW	0	twMangGirl.ptn	12	4	50	100	25
+.
+C	"2100290"	Each
+341	WW	0	twMangdung_kick.ptn	12	4	50	100	50
+.
+C	"2100500"	Each
+341	WW	0	twNov04_VikingMangDung.ptn	12	4	40	80	50
+.
+C	"2100193"	Each
+341	WW	0	twPoseidon.ptn	1830	60	1	1	1
+.
+C	"2100414"	Each
+341	WW	0	twChamp_MangKick.ptn	900	60	1	1	1
+.
+;시노프 던젼
+C	"2100077"	Each
+122	WW	0	twBandageVamp.ptn	13	7	15	40	75
+123	WW	0	twBandageVamp.ptn	13	7	12	25	75
+.
+C	"2100036"	Each
+122	WW	0	twWingky.ptn	16	10	15	40	75
+.
+C	"2100034"	Each
+122	WW	0	twPumkin.ptn	12	4	15	40	75
+.
+C	"2100234"	Each
+122	RR	0	twTrap_Lv50.ptn	(281,256)-(303,271)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(329,132)-(343,143)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(301,64)-(311,75)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(170,280)-(182,290)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(80,344)-(95,359)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(120,281)-(131,299)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(96,225)-(111,231)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(80,113)-(95,119)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(200,217)-(207,231)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(137,160)-(147,175)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(193,113)-(203,119)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(253,83)-(263,95)	120	90	1	1	1
+122	RR	0	twTrap_Lv50.ptn	(224,269)-(239,279)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(176,112)-(183,119)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(240,120)-(248,127)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(330,64)-(339,71)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(336,128)-(343,135)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(336,192)-(343,199)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(240,192)-(247,199)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(296,248)-(303,255)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(220,296)-(227,303)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(152,228)-(159,235)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(72,296)-(79,303)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(128,224)-(135,231)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(172,172)-(179,179)	120	90	1	1	1
+123	RR	0	twTrap_Lv50.ptn	(112,136)-(119,141)	120	90	1	1	1
+.
+C	"2100079"	Each
+123	WW	0	twStelmeto.ptn	13	7	8	20	50
+.
+C	"2100080"	Each
+123	WW	0	twMuscharfa.ptn	14	7	8	20	50
+.
+C	"2100015"	Each
+128	WW	0	twHand.ptn	14	7	35	50	75
+.
+C	"2100013"	Each
+128	WW	0	twTrumpDoll.ptn	15	7	35	50	50
+129	WW	0	twTrumpDoll.ptn	15	7	35	50	75
+.
+C	"2100117"	Each
+128	WW	0	twBHobee.ptn	18	7	35	50	50
+129	WW	0	twBHobee.ptn	18	7	35	50	75
+.
+C	"2100220"	Each
+128	WW	0	twTrap.ptn	29	10	10	30	25
+129	WW	0	twTrap.ptn	29	10	10	30	25
+.
+C	"2100120"	Each
+129	WW	0	twHoneyBear_B.ptn	20	7	35	50	50
+233	WW	0	twHoneyBear_B.ptn	20	7	20	50	75
+.
+C	"2100090"	Each
+233	WW	0	twBloodVamp.ptn	28	10	20	50	50
+.
+C	"2100091"	Each
+233	WW	0	twSnowMuskell.ptn	29	10	18	50	50
+.
+C	"2100235"	Each
+233	WW	0	twTrap_Lv100.ptn	35	10	5	10	25
+234	WW	0	twTrap_Lv100.ptn	35	10	10	20	25
+.
+C	"2100383"	Each
+233	WW	0	twValkan.ptn	35	10	5	10	25
+234	WW	0	twValkan.ptn	35	10	10	20	25
+.
+C	"2100128"	Each
+234	WW	0	twLavaLight.ptn	27	10	20	30	50
+.
+C	"2100126"	Each
+234	WW	0	twEAraene.ptn	27	10	15	30	50
+.
+C	"2100221"	Each
+234	WW	0	twMechanic.ptn	5400	120	1	1	1
+.
+C	"2100339"	Each
+234	WW	0	twPumkin_Dandy.ptn	35	10	10	20	25
+.	
+C	"2100496"	Each
+234	WW	0	twNov04_SandBug.ptn	35	10	10	20	25
+.	
+;필라이온 던젼
+C	"2100039"	Each
+250	WW	0	twSickle.ptn	12	4	25	50	75
+372	WW	0	twSickle.ptn	12	4	25	50	75
+375	WW	0	twSickle.ptn	12	4	25	50	75
+.
+C	"2100077"	Each
+250	WW	0	twBandageVamp.ptn	13	7	25	50	75
+292	WW	0	twBandageVamp.ptn	13	7	25	50	75
+372	WW	0	twBandageVamp.ptn	13	7	25	50	75
+375	WW	0	twBandageVamp.ptn	13	7	25	50	75
+.
+C	"2100418"	Each
+250	WW	0	twAmedin.ptn	11	4	25	50	75
+292	WW	0	twAmedin.ptn	11	4	25	50	75
+.
+C	"2100506"	Each
+292	WW	0	twNov04_VioletPupirum.ptn	12	4	25	50	75
+.
+C	"2100047"	Each
+372	WW	0	twDuckWarriorD.ptn	11	4	25	50	75
+375	WW	0	twDuckWarriorD.ptn	11	4	25	50	75
+.
+C	"2100360"	Each
+425	WR	0	twSkeleton_Grave.ptn	(132,140)-(224,192)	1800	60	3	3	100
+.
+;혼란의 동굴
+C	"2100040"	Each
+61	WW	0	twAraene.ptn	10	4	35	50	75
+.
+C	"2100058"	Each
+61	WW	0	twDolGolem.ptn	11	4	35	50	75
+.
+C	"2100047"	Each
+61	WW	0	twDuckWarriorD.ptn	11	4	35	50	75
+.
+C	"2100039"	Each
+63	WW	0	twSickle.ptn	12	4	30	50	75
+.
+C	"2100012"	Each
+63	WR	0	twWiKid.ptn	(0,300)-(800,800)	13	7	40	50	75
+.
+C	"2100005"	Each
+63	WR	0	twMuskell.ptn	(0,0)-(800,350)	14	7	25	50	50
+182	WR	0	twMuskell.ptn	(0,0)-(350,720)	14	7	25	50	75
+.
+C	"2100088"	Each
+181	WW	0	twScythe.ptn	24	7	30	30	75
+186	WW	0	twScythe.ptn	24	7	35	50	50
+.
+C	"2100125"	Each
+181	WW	0	twDollSwamp.ptn	26	10	30	30	75
+.
+C	"2100099"	Each
+181	WW	0	twDuckWarriorZ.ptn	28	10	30	30	75
+.
+C	"2100342"	Each
+181	WW	0	twHandBlack.ptn	28	10	30	30	75
+.
+C	"2100086"	Each
+182	WR	0	twMuskell2.ptn	(300,0)-(720,720)	17	7	25	50	50
+184	WW	0	twMuskell2.ptn	17	7	25	50	75
+.
+C	"2100043"	Each
+182	WW	0	twDKnight.ptn	17	7	25	50	75
+184	WW	0	twDKnight.ptn	17	7	25	50	75
+.
+C	"2100504"	Each
+182	WW	0	twNov04_ScaBlow.ptn	17	7	20	40	25
+.
+C	"2100083"	Each
+184	WW	0	twComando.ptn	19	7	25	50	50
+186	WW	0	twComando.ptn	19	7	35	50	75
+.
+C	"2100082"	Each
+186	WR	0	twCymon.ptn	(0,400)-(600,600)	20	7	15	30	50
+.
+C	"2100092"	Each
+198	WW	0	twBatBlow.ptn	32	10	30	40	100
+.
+C	"2100093"	Each
+198	WW	0	twPicok.ptn	34	10	16	30	50
+.
+C	"2100097"	Each
+198	WR	0	twSword.ptn	(250,0)-(500,250)	38	14	15	25	25
+.
+C	"2100359"	Each
+198	WR	0	twDGeneral.ptn	(250,0)-(500,250)	38	14	15	25	25
+.	
+C	"2100412"	Each
+198	WW	0	twChamp_BatBlow.ptn	3600	60	1	1	1
+.
+C	"2100390"	Each
+199	WW	0	twWormBlack.ptn	28	10	15	20	75
+.
+C	"2100213"	Each
+199	WW	0	twFaun.ptn	29	10	20	25	50
+.
+C	"2100104"	Each
+199	WW	0	twKilykia.ptn	29	10	20	25	75
+.
+C	"2100295"	Each
+199	WW	0	twFretapiver.ptn	32	10	15	25	50
+.
+C	"2100298"	Each
+199	WW	0	twDevilPaladin.ptn	29	10	15	25	25
+.
+C	"2100494"	Each
+444	WW	0	twNov04_DarkSpeller.ptn	40	20	25	40	50
+.
+C	"2100495"	Each
+444	WW	0	twNov04_Specter.ptn	40	20	35	50	75
+.
+C	"2100503"	Each
+444	WW	0	twNov04_FlavaBomber.ptn	60	30	5	10	25
+.
+C	"2100026"	Each
+444	WW	0	twKnohen.ptn	6600	180	1	1	1
+.
+;봄의 동굴
+C	"2100047"	Each
+56	WW	0	twDuckWarriorD.ptn	11	4	30	50	75
+.
+C	"2100007"	Each
+56	WW	0	twPumon.ptn	8	4	30	50	75
+.
+C	"2100056"	Each
+56	WW	0	twCaveDog.ptn	11	4	30	50	75
+57	WW	0	twCaveDog.ptn	11	4	30	50	75
+.
+C	"2100384"	Each
+56	WW	0	twCoken.ptn	11	4	5	10	25
+.
+C	"2100075"	Each
+57	WR	0	twGrandLava.ptn	(250,0)-(600,400)	12	4	30	50	50
+.
+C	"2100005"	Each
+57	WR	0	twMuskell.ptn	(0,0)-(350,400)	14	7	30	50	50
+.
+C	"2100388"	Each
+57	WW	0	twPlier.ptn	20	60	10	20	25
+.
+;시련의 동굴
+C	"2100047"	Each
+3	WR	0	twDuckWarriorD.ptn	(270,0)-(500,500)	11	4	30	50	75
+44	WW	0	twDuckWarriorD.ptn	11	4	30	50	75
+.
+C	"2100058"	Each
+3	WW	0	twDolGolem.ptn	11	4	30	50	75
+.
+C	"2100071"	Each
+3	WR	0	twMongKus.ptn	(0,0)-(270,500)	11	4	30	50	75
+44	WW	0	twMongKus.ptn	11	4	30	50	75
+.
+C	"2100005"	Each
+44	WW	0	twMuskell.ptn	14	7	30	50	50
+.
+C	"2100103"	Each
+426	WW	0	twGsolider.ptn	26	10	20	25	50
+.
+C	"2100099"	Each
+426	WW	0	twDuckWarriorZ.ptn	28	10	20	25	50
+.
+C	"2100381"	Each
+426	WW	0	twMutuhyunho.ptn	28	10	20	25	50
+.
+;수정 동굴
+C	"2100102"	Each
+94	WW	0	twCrystalGolem.ptn	18	7	20	30	75
+.
+C	"2100101"	Each
+94	WW	0	twCrysera.ptn	22	7	20	30	50
+352	WW	0	twCrysera.ptn	22	7	20	40	50
+427	WW	0	twCrysera.ptn	22	7	20	40	50
+.
+C	"2100291"	Each
+94	WW	0	twWormlizer.ptn	80	60	10	15	25
+.
+C	"2100033"	Each
+237	WW	0	twSkiya.ptn	14	7	15	45	50
+251	WW	0	twSkiya.ptn	14	7	15	45	50
+.
+C	"2100056"	Each
+237	WW	0	twCaveDog.ptn	11	4	25	70	100
+251	WW	0	twCaveDog.ptn	11	4	25	70	100
+.
+C	"2100040"	Each
+237	WW	0	twAraene.ptn	10	4	25	70	100
+251	WW	0	twAraene.ptn	10	4	25	70	100
+.
+C	"2100121"	Each
+352	WW	0	twHandIce.ptn	36	20	15	30	50
+427	WW	0	twHandIce.ptn	36	20	15	30	50
+.
+C	"2100341"	Each
+352	WW	0	twTrumpDoll_Cry.ptn	18	7	20	40	75
+427	WW	0	twTrumpDoll_Cry.ptn	18	7	20	40	75
+.
+;해저 동굴
+C	"2100078"	Each
+112	WW	0	twBizMal.ptn	18	7	25	50	75
+113	WW	0	twBizMal.ptn	18	7	25	50	75
+252	WW	0	twBizMal.ptn	18	7	25	50	75
+.
+C	"2100116"	Each
+112	WW	0	twWingkyFluid.ptn	28	20	25	50	75
+235	WW	0	twWingkyFluid.ptn	28	20	25	40	75
+428	WW	0	twWingkyFluid.ptn	28	20	25	40	75
+.
+C	"2100102"	Each
+112	WW	0	twCrystalGolem.ptn	18	7	25	50	75
+113	WW	0	twCrystalGolem.ptn	18	7	25	50	75
+235	WW	0	twCrystalGolem.ptn	18	7	25	40	75
+428	WW	0	twCrystalGolem.ptn	18	7	25	40	75
+.
+C	"2100121"	Each
+113	WW	0	twHandIce.ptn	36	25	20	50	50
+235	WW	0	twHandIce.ptn	36	20	20	30	50
+252	WW	0	twHandIce.ptn	36	25	20	50	50
+428	WW	0	twHandIce.ptn	36	20	20	30	50
+.
+C	"2100291"	Each
+252	WW	0	twWormlizer.ptn	18	7	25	50	75
+.
+;홍옥 동굴
+C	"2100255"	Each
+349	WW	0	twPikel_Field.ptn	14	7	20	40	75
+.
+C	"2100262"	Each
+349	WW	0	twMagmaBuble_F.ptn	17	7	20	40	50
+.
+C	"2100257"	Each
+349	WW	0	twVolFlava.ptn	17	7	20	40	50
+.
+C	"2100382"	Each
+349	WW	0	twMayple.ptn	17	7	20	40	50
+.
+C	"2100122"	Each
+351	WW	0	twFSyapeer.ptn	22	7	20	50	75
+.
+C	"2100292"	Each
+351	WW	0	twPikel_welter.ptn	22	7	20	50	75
+354	WW	0	twPikel_welter.ptn	22	7	20	50	75
+.
+C	"2100089"	Each
+351	WW	0	twRedWiKid.ptn	26	10	25	50	50
+.
+C	"2100126"	Each
+354	WW	0	twEAraene.ptn	10	4	30	70	100
+.
+C	"2100294"	Each
+354	WW	0	twFlowermon_vol.ptn	10	4	30	70	100
+.
+C	"2100499"	Each
+354	WW	0	twNov04_Saerpi.ptn	60	1800	1	1	1
+.
+C	"2100096"	Each
+371	WW	0	twElemental.ptn	35	10	10	15	25
+.
+C	"2100299"	Each
+371	WW	0	twRedAnt.ptn	35	10	20	30	50
+.
+C	"2100258"	Each
+371	WW	0	twLemures.ptn	35	10	15	25	50
+.
+C	"2100338"	Each
+371	WW	0	twDuckWarriorF.ptn	35	10	15	25	50
+.
+C	"2100497"	Each
+371	WW	0	twNov04_LasieDollGolram.ptn	35	10	20	30	50
+.
+C	"2100256"	Each
+371	WW	0	twFleamLizard_F.ptn	3600	60	1	1	1
+.
+C	"2100550"	Each
+371	WW	0	twFeb17_HardPuncher.ptn	35	10	15	25	50
+.
+
+;그린츠 광산
+C	"2100058"	Each
+216	WW	0	twDolGolem.ptn	11	4	40	50	100
+.
+C	"2100012"	Each
+216	WW	0	twWiKid.ptn	13	7	35	50	75
+.
+C	"2100011"	Each
+216	WW	0	twScoop.ptn	13	7	35	50	75
+.
+C	"2100416"	Each
+216	WW	0	twChamp_Scoop.ptn	900	60	1	1	1
+.
+C	"2100083"	Each
+218	WW	0	twComando.ptn	19	7	30	50	75
+298	WW	0	twComando.ptn	24	7	20	60	100
+.
+C	"2100100"	Each
+218	WW	0	twWikidy.ptn	24	7	40	50	75
+298	WW	0	twWikidy.ptn	24	7	35	60	100
+.
+C	"2100089"	Each
+218	WW	0	twRedWiKid.ptn	26	10	25	50	50
+.
+C	"2100293"	Each
+298	WW	0	twWorm_under.ptn	24	7	20	60	100
+.
+C	"2100127"	Each
+353	WW	0	twGolemBlack.ptn	27	10	15	25	50
+.
+C	"2100104"	Each
+353	WW	0	twKilykia.ptn	29	10	20	25	75
+.
+C	"2100296"	Each
+353	WW	0	twDuckWarrior_deep.ptn	29	10	20	25	75
+.
+C	"2100385"	Each
+353	WW	0	twVicious.ptn	29	10	10	15	75
+.
+;도플갱어의 숲
+C	"2100301"	Each
+176	WW	0	twRusiDL050.ptn	51	5	1	1	1
+.
+C	"2100302"	Each
+176	WW	0	twBorisDL050.ptn	51	5	1	1	1
+.
+C	"2100303"	Each
+176	WW	0	twMakDL050.ptn	1	51	5	1	1
+.
+C	"2100305"	Each
+176	WW	0	twSibelDL050.ptn	51	5	1	1	1
+.
+C	"2100308"	Each
+176	WW	0	twMillaDL050.ptn	51	5	1	1	1
+.
+C	"2100307"	Each
+176	WW	0	twTichielDL050.ptn	51	5	1	1	1
+.
+C	"2100304"	Each
+176	WW	0	twIspinDL050.ptn	51	5	1	1	1
+.
+C	"2100306"	Each
+176	WW	0	twNayaDL050.ptn	51	5	1	1	1
+.
+C	"2100297"	Each
+187	WW	0	twWingky_alder.ptn	30	10	10	20	100
+.
+C	"2100219"	Each
+187	WW	0	twBomb.ptn	20	7	5	10	50
+.
+C	"2100027"	Each
+187	WW	0	twRusiDL255.ptn	400	40	1	1	1
+.
+C	"2100028"	Each
+187	WW	0	twBorisDL255.ptn	400	40	1	1	1
+.
+C	"2100029"	Each
+187	WW	0	twMakDL255.ptn	400	40	1	1	1
+.
+C	"2100031"	Each
+187	WW	0	twSibelDL255.ptn	400	40	1	1	1
+.
+C	"2100051"	Each
+187	WW	0	twMillaDL255.ptn	400	40	1	1	1
+.
+C	"2100050"	Each
+187	WW	0	twTichielDL255.ptn	400	40	1	1	1
+.
+C	"2100030"	Each
+187	WW	0	twIspinDL255.ptn	400	40	1	1	1
+.
+C	"2100032"	Each
+187	WW	0	twNayaDL255.ptn	400	40	1	1	1
+.
+C	"2100309"	Each
+189	WW	0	twRusiDL100.ptn	100	10	1	1	1
+.
+C	"2100310"	Each
+189	WW	0	twBorisDL100.ptn	100	10	1	1	1
+.
+C	"2100311"	Each
+189	WW	0	twMakDL100.ptn	100	10	1	1	1
+.
+C	"2100313"	Each
+189	WW	0	twSibelDL100.ptn	100	10	1	1	1
+.
+C	"2100316"	Each
+189	WW	0	twMillaDL100.ptn	100	10	1	1	1
+.
+C	"2100315"	Each
+189	WW	0	twTichielDL100.ptn	100	10	1	1	1
+.
+C	"2100312"	Each
+189	WW	0	twIspinDL100.ptn	100	10	1	1	1
+.
+C	"2100314"	Each
+189	WW	0	twNayaDL100.ptn	100	10	1	1	1
+.
+C	"2100317"	Each
+190	WW	0	twRusiDL150.ptn	200	20	1	1	1
+.
+C	"2100318"	Each
+190	WW	0	twBorisDL150.ptn	200	20	1	1	1
+.
+C	"2100319"	Each
+190	WW	0	twMakDL150.ptn	200	20	1	1	1
+.
+C	"2100321"	Each
+190	WW	0	twSibelDL150.ptn	200	20	1	1	1
+.
+C	"2100324"	Each
+190	WW	0	twMillaDL150.ptn	200	20	1	1	1
+.
+C	"2100323"	Each
+190	WW	0	twTichielDL150.ptn	200	20	1	1	1
+.
+C	"2100320"	Each
+190	WW	0	twIspinDL150.ptn	200	20	1	1	1
+.
+C	"2100322"	Each
+190	WW	0	twNayaDL150.ptn	200	20	1	1	1
+.
+C	"2100325"	Each
+418	WW	0	twRusiDL200.ptn	300	30	1	1	1
+.
+C	"2100326"	Each
+418	WW	0	twBorisDL200.ptn	300	30	1	1	1
+.
+C	"2100327"	Each
+418	WW	0	twMakDL200.ptn	300	30	1	1	1
+.
+C	"2100329"	Each
+418	WW	0	twSibelDL200.ptn	300	30	1	1	1
+.
+C	"2100332"	Each
+418	WW	0	twMillaDL200.ptn	300	30	1	1	1
+.
+C	"2100331"	Each
+418	WW	0	twTichielDL200.ptn	300	30	1	1	1
+.
+C	"2100328"	Each
+418	WW	0	twIspinDL200.ptn	300	30	1	1	1
+.
+C	"2100330"	Each
+418	WW	0	twNayaDL200.ptn	1	300	30	1	1
+.
+;진혼의 탑
+C	"2100420"	Each
+257	WP	0	twRequiem_CH1boss.ptn	(212,183)	1500	60	1	1	1
+.
+C	"2100433"	Each
+257	WW	0	twRequiem_CH1zako2.ptn	1	1	30	50	100
+265	WW	0	twRequiem_CH1zako2.ptn	1	1	30	60	100
+.
+C	"2100421"	Each
+259	WP	0	twRequiem_CH2boss.ptn	(152,128)	1500	60	1	1	1
+.
+C	"2100435"	Each
+259	WW	0	twRequiem_CH2zako2.ptn	1	1	15	30	100
+.
+C	"2100436"	Each
+259	WW	0	twRequiem_CH2zako3.ptn	1	1	20	40	100
+266	WW	0	twRequiem_CH2zako3.ptn	1	1	30	60	100
+.
+C	"2100422"	Each
+260	WP	0	twRequiem_CH3boss.ptn	(224,184)	1500	60	1	1	1
+.
+C	"2100438"	Each
+260	WW	0	twRequiem_CH3zako2.ptn	1	1	15	30	100
+.
+C	"2100439"	Each
+260	WW	0	twRequiem_CH3zako3.ptn	1	1	20	40	100
+267	WW	0	twRequiem_CH3zako3.ptn	1	1	30	60	100
+.
+C	"2100423"	Each
+261	WP	0	twRequiem_CH4bosshead.ptn	(132,100)	1500	60	1	1	1
+.
+C	"2100424"	Each
+261	PP	0	twRequiem_CH4bosssub1.ptn	(176,152)	1500	60	1	1	1
+261	PP	0	twRequiem_CH4bosssub1.ptn	(176,100)	1500	60	1	1	1
+.
+C	"2100440"	Each
+261	WW	0	twRequiem_CH4zako1.ptn	1	1	10	20	100
+.
+C	"2100441"	Each
+261	WW	0	twRequiem_CH4zako2.ptn	1	1	10	20	100
+.
+C	"2100442"	Each
+261	WW	0	twRequiem_CH4zako3.ptn	1	1	20	40	100
+268	WW	0	twRequiem_CH4zako3.ptn	1	1	30	60	100
+.
+C	"2100425"	Each
+262	WP	0	twRequiem_CH5boss.ptn	(248,184)	1500	60	1	1	1
+.
+C	"2100445"	Each
+262	WW	0	twRequiem_CH5zako3.ptn	1	1	30	50	100
+269	WW	0	twRequiem_CH5zako3.ptn	1	1	30	60	100
+.
+C	"2100428"	Each
+263	WP	0	twRequiem_CH6boss.ptn	(152,128)	1500	60	1	1	1
+.
+C	"2100447"	Each
+263	WW	0	twRequiem_CH6zako2.ptn	1	1	15	30	100
+.
+C	"2100448"	Each
+263	WW	0	twRequiem_CH6zako3.ptn	1	1	20	40	100
+270	WW	0	twRequiem_CH6zako3.ptn	1	1	30	60	100
+.
+C	"2100429"	Each
+264	WW	0	twRequiem_CH7boss1.ptn	1500	60	1	1	1
+.
+C	"2100449"	Each
+264	WW	0	twRequiem_CH7zako1.ptn	1	1	20	40	100
+.
+C	"2100450"	Each
+264	WW	0	twRequiem_CH7zako2.ptn	1	1	20	40	100
+.
+C	"2100427"	Each
+265	PP	0	twRequiem_Trap.ptn	(254,250)	1	1	1	1	1
+265	PP	0	twRequiem_Trap.ptn	(254,110)	1	1	1	1	1
+266	PP	0	twRequiem_Trap.ptn	(254,250)	1	1	1	1	1
+266	PP	0	twRequiem_Trap.ptn	(254,110)	1	1	1	1	1
+267	PP	0	twRequiem_Trap.ptn	(254,250)	1	1	1	1	1
+267	PP	0	twRequiem_Trap.ptn	(254,110)	1	1	1	1	1
+268	PP	0	twRequiem_Trap.ptn	(254,250)	1	1	1	1	1
+268	PP	0	twRequiem_Trap.ptn	(254,110)	1	1	1	1	1
+269	PP	0	twRequiem_Trap.ptn	(254,250)	1	1	1	1	1
+269	PP	0	twRequiem_Trap.ptn	(254,110)	1	1	1	1	1
+270	PP	0	twRequiem_Trap.ptn	(254,250)	1	1	1	1	1
+270	PP	0	twRequiem_Trap.ptn	(254,110)	1	1	1	1	1
+.
+C	"2100426"	Each
+265	PP	0	twRequiem_Valkan.ptn	(138,166)	1	1	1	1	1
+265	PP	0	twRequiem_Valkan.ptn	(138,206)	1	1	1	1	1
+265	PP	0	twRequiem_Valkan.ptn	(318,158)	1	1	1	1	1
+265	PP	0	twRequiem_Valkan.ptn	(318,206)	1	1	1	1	1
+266	PP	0	twRequiem_Valkan.ptn	(138,166)	1	1	1	1	1
+266	PP	0	twRequiem_Valkan.ptn	(138,206)	1	1	1	1	1
+266	PP	0	twRequiem_Valkan.ptn	(318,158)	1	1	1	1	1
+266	PP	0	twRequiem_Valkan.ptn	(318,206)	1	1	1	1	1
+266	PP	0	twRequiem_Valkan.ptn	(390,160)	1	1	1	1	1
+266	PP	0	twRequiem_Valkan.ptn	(390,190)	1	1	1	1	1
+267	PP	0	twRequiem_Valkan.ptn	(138,166)	1	1	1	1	1
+267	PP	0	twRequiem_Valkan.ptn	(138,206)	1	1	1	1	1
+267	PP	0	twRequiem_Valkan.ptn	(318,158)	1	1	1	1	1
+267	PP	0	twRequiem_Valkan.ptn	(318,206)	1	1	1	1	1
+268	PP	0	twRequiem_Valkan.ptn	(138,166)	1	1	1	1	1
+268	PP	0	twRequiem_Valkan.ptn	(138,206)	1	1	1	1	1
+268	PP	0	twRequiem_Valkan.ptn	(318,158)	1	1	1	1	1
+268	PP	0	twRequiem_Valkan.ptn	(318,206)	1	1	1	1	1
+268	PP	0	twRequiem_Valkan.ptn	(390,160)	1	1	1	1	1
+268	PP	0	twRequiem_Valkan.ptn	(390,190)	1	1	1	1	1
+269	PP	0	twRequiem_Valkan.ptn	(138,166)	1	1	1	1	1
+269	PP	0	twRequiem_Valkan.ptn	(138,206)	1	1	1	1	1
+269	PP	0	twRequiem_Valkan.ptn	(318,158)	1	1	1	1	1
+269	PP	0	twRequiem_Valkan.ptn	(318,206)	1	1	1	1	1
+270	PP	0	twRequiem_Valkan.ptn	(138,166)	1	1	1	1	1
+270	PP	0	twRequiem_Valkan.ptn	(138,206)	1	1	1	1	1
+270	PP	0	twRequiem_Valkan.ptn	(318,158)	1	1	1	1	1
+270	PP	0	twRequiem_Valkan.ptn	(318,206)	1	1	1	1	1
+270	PP	0	twRequiem_Valkan.ptn	(390,160)	1	1	1	1	1
+270	PP	0	twRequiem_Valkan.ptn	(390,190)	1	1	1	1	1
+.
+;나비나무 숲
+C	"2100280"	Each
+355	WW	0	twIpariMan_CH4.ptn	10	1	8	11	100
+357	WW	0	twIpariMan_CH4.ptn	10	1	6	9	100
+358	WW	0	twIpariMan_CH4.ptn	10	1	6	9	100
+359	WW	0	twIpariMan_CH4.ptn	10	1	9	12	100
+360	WW	0	twIpariMan_CH4.ptn	10	1	6	9	100
+361	WW	0	twIpariMan_CH4.ptn	10	1	6	9	100
+367	WW	0	twIpariMan_CH4.ptn	10	1	6	9	100
+368	WW	0	twIpariMan_CH4.ptn	10	1	8	11	100
+.
+C	"2100284"	Each
+355	WP	0	twButterflyTree1_CH4_1.ptn	(132,83)	900	60	1	1	100
+356	WP	0	twButterflyTree1_CH4_1.ptn	(129,85)	900	60	1	1	100
+368	WP	0	twButterflyTree1_CH4_1.ptn	(127,84)	900	60	1	1	100
+369	WP	0	twButterflyTree1_CH4_1.ptn	(126,81)	900	60	1	1	100
+.
+C	"2100282"	Each
+356	WW	0	twMoth1_CH4.ptn	60	1	8	11	100
+357	WW	0	twMoth1_CH4.ptn	60	1	4	7	100
+358	WW	0	twMoth1_CH4.ptn	60	1	4	7	100
+365	WW	0	twMoth1_CH4.ptn	60	1	9	12	100
+366	WW	0	twMoth1_CH4.ptn	60	1	5	8	100
+369	WW	0	twMoth1_CH4.ptn	60	1	8	11	100
+370	WW	0	twMoth1_CH4.ptn	60	1	4	7	100
+.
+C	"2100281"	Each
+360	WW	0	twTreeMon_CH4.ptn	20	1	4	7	100
+361	WW	0	twTreeMon_CH4.ptn	20	1	4	7	100
+362	WW	0	twTreeMon_CH4.ptn	20	1	8	11	100
+364	WW	0	twTreeMon_CH4.ptn	20	1	8	11	100
+367	WW	0	twTreeMon_CH4.ptn	20	1	4	7	100
+.
+C	"2100283"	Each
+363	WW	0	twButterflyTree2_CH4.ptn	600	60	2	4	50
+366	WW	0	twButterflyTree2_CH4.ptn	600	60	2	3	25
+370	WW	0	twButterflyTree2_CH4.ptn	600	60	2	2	100
+.
+C	"2100285"	Each
+370	WP	0	twButterflyTree1_CH4_2.ptn	(96,120)	2400	60	1	1	100
+.
+;검은안개섬
+C	"2100237"	Each
+96	WW	0	twTako_Dark.ptn	18	7	3	9	100
+97	WW	0	twTako_Dark.ptn	18	7	3	9	100
+102	WW	0	twTako_Dark.ptn	18	7	3	9	100
+330	WW	0	twTako_Dark.ptn	18	7	3	9	100
+.
+C	"2100238"	Each
+96	WW	0	twKrakenJr_Dark.ptn	22	7	3	9	100
+97	WW	0	twKrakenJr_Dark.ptn	22	7	3	9	100
+102	WW	0	twKrakenJr_Dark.ptn	22	7	3	9	100
+330	WW	0	twKrakenJr_Dark.ptn	22	7	3	9	100
+.
+C	"2100221"	Each
+96	WP	0	twMechanic.ptn	(190,160)	43200	60	1	1	100
+.
+C	"2100241"	Each
+97	WP	0	twChikaBoom_Dark.ptn	(200,170)	2400	60	1	1	100
+.
+C	"2100259"	Each
+102	WP	0	twKnohen_Dark.ptn	(180,180)	1800	60	1	1	100
+.
+C	"2100239"	Each
+330	WP	0	twJellyKing_Dark.ptn	(180,180)	2400	60	1	1	100
+.
+;축복의 던젼
+C	"2100009"	Each
+422	WR	0	twJellypi.ptn	(80,80)-(330,200)	1	4	18	30	50
+.
+C	"2100035"	Each
+422	WR	0	twBaybing.ptn	(80,80)-(330,200)	1	4	18	30	50
+.
+C	"2100060"	Each
+422	WR	0	twWildCat.ptn	(80,80)-(330,200)	1	4	10	15	25
+.
+C	"2100021"	Each
+422	WR	0	twGrJellypi.ptn	(80,170)-(330,280)	4	10	15	25	50
+.
+C	"2100023"	Each
+422	WR	0	twGrJellypiL.ptn	(80,170)-(330,330)	4	10	20	30	50
+.
+C	"2100187"	Each
+422	WR	0	twBaybingBrown.ptn	(80,170)-(330,280)	4	10	15	25	25
+.
+C	"2100067"	Each
+422	WR	0	twFlowerMon.ptn	(80,250)-(330,330)	7	16	15	20	75
+.
+C	"2100046"	Each
+423	WR	0	twMangdung.ptn	(80,80)-(200,330)	4	4	25	35	100
+.
+C	"2100070"	Each
+423	WR	0	twTreeMon.ptn	(80,80)-(200,330)	5	4	15	25	50
+.
+C	"2100055"	Each
+423	WR	0	twTako.ptn	(170,80)-(280,330)	5	4	20	30	75
+.
+C	"2100037"	Each
+423	WR	0	twRedMine.ptn	(170,80)-(280,330)	5	4	10	20	100
+.
+C	"2100076"	Each
+423	WR	0	twSkullWarrior.ptn	(250,80)-(330,330)	12	10	20	30	100
+.
+C	"2100052"	Each
+423	WR	0	twHorseBee.ptn	(250,80)-(330,330)	6	4	10	20	50
+.
+C	"2100007"	Each
+424	WR	0	twPumon.ptn	(70,180)-(330,330)	8	4	25	35	75
+.
+C	"2100003"	Each
+424	WR	0	twFreta.ptn	(70,180)-(330,330)	14	10	40	50	100
+.
+C	"2100036"	Each
+424	WR	0	twWingky.ptn	(70,90)-(330,230)	16	10	40	50	75
+.
+C	"2100014"	Each
+424	WR	0	twSyaPeer.ptn	(70,90)-(330,230)	10	4	20	30	75
+.
+;신수/요새전 관련
+C	"2100363"	Each
+290	WW	0	twSLance_Fortress.ptn	1	1	20	40	100
+417	WW	0	twSLance_Fortress.ptn	1	1	20	40	100
+.
+C	"2100366"	Each
+290	WW	0	twMagi_Fortress.ptn	1	1	15	30	75
+417	WW	0	twMagi_Fortress.ptn	1	1	15	30	75
+.
+C	"2100367"	Each
+290	WW	0	twKnight_Fortress.ptn	1	1	15	30	75
+417	WW	0	twKnight_Fortress.ptn	1	1	15	30	75
+.
+C	"2100368"	Each
+290	WW	0	twGSoldier_Fortress.ptn	1	1	10	20	50
+417	WW	0	twGSoldier_Fortress.ptn	1	1	10	20	50
+.
+C	"2100221"	Each
+290	WW	0	twSecret_BDoll.ptn	600	60	1	1	1
+417	WW	0	twSecret_BDoll.ptn	600	60	1	1	1
+.
+C	"2100104"	Each
+293	WW	0	twKilykia.ptn	40	20	7	14	75
+.
+C	"2100296"	Each
+293	WW	0	twDuckWarrior_deep.ptn	40	20	5	10	50
+.
+C	"2100385"	Each
+293	WW	0	twVicious.ptn	40	20	4	8	100
+.
+C	"2100477"	Each
+296	WP	0	twGuardian3_Gig_D.ptn	(150,135)	43200	60	1	1	100
+.
+C	"2100478"	Each
+297	WP	0	twGuardian4_Cus_D.ptn	(150,180)	43200	60	1	1	100
+.
+C	"2100292"	Each
+408	WW	0	twPikel_welter.ptn	40	20	7	14	75
+.
+C	"2100089"	Each
+408	WW	0	twRedWiKid.ptn	40	20	5	10	50
+.
+C	"2100294"	Each
+408	WW	0	twFlowermon_vol.ptn	40	20	4	8	100
+.
+C	"2100370"	Each
+415	WP	0	twGuardian2_Blk_D.ptn	(217,173)	43200	60	1	1	100
+.
+C	"2100369"	Each
+416	WP	0	twGuardian1_Red_D.ptn	(205,169)	43200	60	1	1	100
+.
+C	"2100094"	Each
+373	WP	0	twGram.ptn	(85,85)	1	1	1	1	100
+.
+C	"2100374"	Each
+419	WP	0	twGram.ptn	(100,100)	1	1	1	1	100
+.
+C	"2100375"	Each
+420	WP	0	twGram.ptn	(100,100)	1	1	1	1	100
+.
+C	"2100361"	Each
+425	WP	0	twLich.ptn	(222,164)	21600	60	1	1	100
+.
+;혼령의미로맵 관련
+C	"2100578"	Each
+478	WW	0	twApr14_HadesEnvoy.ptn	20	10	2	4	100
+.
+C	"2100579"	Each
+478	WW	0	twApr19_CraftyWoman.ptn	10	5	9	17	100
+.
+C	"2100580"	Each
+478	WW	0	twApr14_TombstoneMan.ptn	10	5	8	15	100
+.
+C	"2100593"	Each
+16	WW	0	twMay18_DoggaebiBoss.ptn	20	10	2	4	100
+.
+C	"2100594"	Each
+16	WW	0	twMay18_DoggaebiHuzu.ptn	10	5	9	17	100
+.
+C	"2100595"	Each
+16	WW	0	twMay18_DoggaebiCiu.ptn	10	5	8	15	100
+.
+C	"2100596"	Each
+29	WW	0	twMay23_KangSheeBoss.ptn	20	10	2	4	100
+.
+C	"2100597"	Each
+29	WW	0	twMay23_KangSheeRedEye.ptn	10	5	9	17	100
+.
+C	"2100598"	Each
+29	WW	0	twMay23_KangSheeDong.ptn	10	5	8	15	100
+.
+;케이레스사막
+C	"2100600"	Each
+482	WW	0	twJun21_SandRam.ptn	30	15	35	55	50
+.
+C	"2100585"	Each
+482	WW	0	twJun21_Tarantula.ptn	30	15	45	65	75
+.
+C	"2100602"	Each
+482	WW	0	twJun21_DesertCactus.ptn	30	15	50	70	100
+.
+C	"2100627"	Each
+482	WW	0	twJul15_KasiMusi.ptn	3600	60	1	1	1
+.
+;사막유적지
+C	"2100601"	Each
+522	WW	0	twJun21_ScorpionMon.ptn	30	15	20	30	30
+.
+C	"2100603"	Each
+522	WW	0	twJul11_FennecFox.ptn	30	15	22	35	40
+.
+C	"2100612"	Each
+522	WW	0	twJul11_Ballet.ptn	30	15	25	40	70
+.
