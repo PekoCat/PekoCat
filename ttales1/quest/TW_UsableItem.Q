@@ -15049,25 +15049,25 @@ qUseItem1003859()				// 크리스마스 선물상자
 	{
 		trigger.addItemClassNamed("1002008", 1);
 	}
-	else if(iRandom <= 62) //1000665	숫돌 14/1000
+	else if(iRandom <= 62) //1003027	숫돌 14/1000
 	{
-		trigger.addItemClassNamed("1000665", 1);
+		trigger.addItemClassNamed("1003027", 1);
 	}
-	else if(iRandom <= 76) //1000392	그라인더 14/1000
+	else if(iRandom <= 76) //1002203	그라인더 14/1000
 	{
-		trigger.addItemClassNamed("1000392", 1);
+		trigger.addItemClassNamed("1002203", 1);
 	}
-	else if(iRandom <= 90) //1000350	탄성 로션(대) 14/1000
+	else if(iRandom <= 90) //1003393	탄성 로션(대) 14/1000
 	{
-		trigger.addItemClassNamed("1000350", 1);
+		trigger.addItemClassNamed("1003393", 1);
 	}
-	else if(iRandom <= 104) //1000329	마력강화제(대) 14/1000
+	else if(iRandom <= 104) //1002110	마력강화제(대) 14/1000
 	{
-		trigger.addItemClassNamed("1000329", 1);
+		trigger.addItemClassNamed("1002110", 1);
 	}
-	else if(iRandom <= 118) //1000686	여신의 가호 14/1000
+	else if(iRandom <= 118) //1002090	여신의 가호 14/1000
 	{
-		trigger.addItemClassNamed("1000686", 1);
+		trigger.addItemClassNamed("1002090", 1);
 	}
 	else if(iRandom <= 484) //1001808	마나의 결정 370/100
 	{
@@ -17101,7 +17101,7 @@ qUseItem1004798()		// 러브러브 선물세트 (발렌타인 이벤트용)
 	else if(iRandom <= 7820)	// 1005062	러브 너구리 목도리 6%
 	{
 		trigger.addItemClassNamed("1005062", 1);
-		Item_Info = "From Gift Certificate : +ITEM [ 1005062 ] ";
+		Item_Info = "From Gift Certificate : +ITEM [ 1006193 ] ";
 	}
 	else if(iRandom <= 9820)	// 1000022	적중의 푸딩 20%
 	{
