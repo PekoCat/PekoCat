@@ -1606,3 +1606,41 @@ C	"2100603"	Each
 C	"2100612"	Each
 522	WW	0	twJul11_Ballet.ptn	30	15	25	40	70
 .
+C	"2100780"	Each
+674	WW	0	tw2006Mar15_IceJellypi.ptn	30	15	25	40	70
+.
+C	"2100785"	Each
+674	WW	0	tw2006Mar15_Husky.ptn	30	15	25	40	70
+675	WW	0	tw2006Mar15_Husky.ptn	30	15	25	40	70
+684	WW	0	tw2006Mar15_Husky.ptn	30	15	25	40	70
+.
+C	"2100784"	Each
+674	WW	0	tw2006Mar15_KumaBear.ptn	30	15	25	40	70
+675	WW	0	tw2006Mar15_KumaBear.ptn	30	15	25	40	70
+684	WW	0	tw2006Mar15_KumaBear.ptn	30	15	25	40	70
+.
+C	"2100781"	Each
+675	WW	0	tw2006Mar15_SnowRabbit.ptn	30	15	25	40	70
+684	WW	0	tw2006Mar15_SnowRabbit.ptn	30	15	25	40	70
+.
+C	"2100881"	Each
+684	WW	0	tw2006May16_IceBaybing.ptn	30	15	25	40	70
+.
+C	"2100695"	Each
+543	WW	0	tw2006WailT07Z_GhostSiam.ptn	30	15	20	30	30
+.
+C	"2100688"	Each
+543	WW	0	tw2006WailT07Z_VulcanAnt.ptn	30	15	20	30	30
+.
+C	"2100692"	Each
+543	WW	0	tw2006WailT07Z_DWarriorDesert.ptn	30	15	20	30	30
+.
+C	"2100689"	Each
+544	WW	0	twOct20_Poid.ptn	30	15	20	30	30
+.
+C	"2100690"	Each
+544	WW	0	tw2006WailT07Z_Cactus.ptn	30	15	20	30	30
+.
+C	"2100691"	Each
+544	WW	0	twOct27_FretaDt.ptn	30	15	20	30	30
+.
