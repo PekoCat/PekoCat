@@ -1612,12 +1612,10 @@ C	"2100780"	Each
 C	"2100785"	Each
 674	WW	0	tw2006Mar15_Husky.ptn	30	15	25	40	70
 675	WW	0	tw2006Mar15_Husky.ptn	30	15	25	40	70
-684	WW	0	tw2006Mar15_Husky.ptn	30	15	25	40	70
 .
 C	"2100784"	Each
 674	WW	0	tw2006Mar15_KumaBear.ptn	30	15	25	40	70
 675	WW	0	tw2006Mar15_KumaBear.ptn	30	15	25	40	70
-684	WW	0	tw2006Mar15_KumaBear.ptn	30	15	25	40	70
 .
 C	"2100781"	Each
 675	WW	0	tw2006Mar15_SnowRabbit.ptn	30	15	25	40	70
@@ -1625,6 +1623,12 @@ C	"2100781"	Each
 .
 C	"2100881"	Each
 684	WW	0	tw2006May16_IceBaybing.ptn	30	15	25	40	70
+.
+C	"2100882"	Each
+684	WW	0	tw2006May16_Igloo.ptn	30	15	25	40	70
+.
+C	"2100883"	Each
+684	WW	0	tw2006May16_Weasel.ptn	30	15	25	40	70
 .
 C	"2100695"	Each
 543	WW	0	tw2006WailT07Z_GhostSiam.ptn	30	15	20	30	30
@@ -1639,8 +1643,97 @@ C	"2100689"	Each
 544	WW	0	twOct20_Poid.ptn	30	15	20	30	30
 .
 C	"2100690"	Each
-544	WW	0	tw2006WailT07Z_Cactus.ptn	30	15	20	30	30
+544	WW	0	twOct20_Astro.ptn	30	15	20	30	30
 .
 C	"2100691"	Each
 544	WW	0	twOct27_FretaDt.ptn	30	15	20	30	30
+.
+C	"2100693"	Each
+545	WW	0	tw2006WailT10Z_GuardScorpion.ptn	30	15	20	30	30
+546	WW	0	tw2006WailT10Z_GuardScorpion.ptn	30	15	20	30	30
+.
+C	"2100698"	Each
+545	WW	0	tw2006WailT10Z_GoldianJr.ptn	30	15	20	30	30
+.
+C	"2100694"	Each
+545	WW	0	tw2006WailT10Z_Goldian.ptn	30	15	20	30	30
+.
+C	"2100697"	Each
+546	WW	0	tw2006WailT10Z_GargoyleJr.ptn	30	15	20	30	30
+.
+C	"2100696"	Each
+546	WW	0	tw2006WailT10Z_Gargoyle.ptn	30	15	20	30	30
+.
+C	"2100786"	Each
+676	WW	0	tw2006Mar15_IceBallet.ptn	30	15	20	30	30
+.
+C	"2100783"	Each
+676	WW	0	tw2006Mar15_Seal.ptn	30	15	20	30	30
+.
+C	"2100790"	Each
+676	WW	0	tw2006Mar15_Penguin.ptn	30	15	20	30	30
+.
+C	"2100885"	Each
+682	WW	0	tw2006May16_IceWorm.ptn	30	15	20	30	30
+683	WW	0	tw2006May16_IceWorm.ptn	30	15	20	30	30
+.
+C	"2100884"	Each
+682	WW	0	tw2006May16_Owl.ptn	30	15	20	30	30
+683	WW	0	tw2006May16_Owl.ptn	30	15	20	30	30
+.
+C	"2100886"	Each
+682	WW	0	tw2006May16_FrozenLizard.ptn	30	15	20	30	30
+.
+C	"2100887"	Each
+682	WW	0	tw2006May16_SnowMan.ptn	30	15	20	30	30
+.
+C	"2100888"	Each
+683	WW	0	tw2006May16_Hunter.ptn	30	15	20	30	30
+.
+C	"2100889"	Each
+683	WW	0	tw2006May16_SnowQueen	5400	120	1	1	1
+.
+C	"2100891"	Each
+687	WW	0	tw2006July11_TreeMonster.ptn	30	15	20	30	30
+.
+C	"2100892"	Each
+687	WW	0	tw2006July11_Monoful.ptn	30	15	20	30	30
+.
+C	"2100893"	Each
+687	WW	0	tw2006July11_GingerMan.ptn	30	15	20	30	30
+688	WW	0	tw2006July11_GingerMan.ptn	30	15	20	30	30
+.
+C	"2100894"	Each
+688	WW	0	tw2006July11_WoodenHorse.ptn	30	15	20	30	30
+.
+C	"2100895"	Each
+688	WW	0	tw2006July11_Postbox.ptn	30	15	20	30	30
+.
+C	"2100906"	Each
+688	WW	0	tw2006July11_HighBootsCat.ptn	30	15	20	30	30
+.
+C	"2100896"	Each
+689	WW	0	tw2006July11_BoxMonster.ptn	30	15	20	30	30
+.
+C	"2100897"	Each
+689	WW	0	tw2006July11_Wikidy.ptn	30	15	20	30	30
+.
+C	"2100898"	Each
+689	WW	0	tw2006July11_MaskCat.ptn	30	15	20	30	30
+.
+C	"2100901"	Each
+691	WW	0	tw2006July11_Nutcracker.ptn	30	15	20	30	30
+.
+C	"2100902"	Each
+691	WW	0	tw2006July11_MatchGirl.ptn	30	15	20	30	30
+697	WW	0	tw2006July11_MatchGirl.ptn	45	15	9	9	30
+.
+C	"2100903"	Each
+691	WW	0	tw2006July11_Reindeer.ptn	45	15	7	7	30
+.
+C	"2100905"	Each
+697	WW	0	tw2006July11_SnowQueen.ptn	45	15	5	5	30
+.
+C	"2100904"	Each
+697	WW	0	tw2006July11_SantaClaus.ptn	45	15	5	5	30
 .
