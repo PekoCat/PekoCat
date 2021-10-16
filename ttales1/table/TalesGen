@@ -1691,7 +1691,7 @@ C	"2100888"	Each
 683	WW	0	tw2006May16_Hunter.ptn	30	15	50	75	50
 .
 C	"2100889"	Each
-683	WW	0	tw2006May16_SnowQueen	5400	120	1	1	1
+683	WW	0	tw2006May16_SnowQueen	180	120	10	10	25
 .
 C	"2100891"	Each
 687	WW	0	tw2006July11_TreeMonster.ptn	30	15	50	75	50
